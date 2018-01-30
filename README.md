@@ -1,1 +1,1 @@
-# biggroup
+# BIG group ICO token~

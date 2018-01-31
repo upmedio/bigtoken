@@ -4,6 +4,32 @@
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
 
+@import "font.less";
+
+
+/*---- Variable ----*/
+//font-size
+@font-smaller: 10px;
+@font-small: 11px;
+@font-normal: 12px;
+
+//color
+@white: #FFF;
+@maroon: #992059;
+@steelblue: #4D697B;
+
+/*---- Mixin ----*/
+//border
+.border-radius-lg(){
+  border-radius: 25px;
+}
+.background-image( @background-image, @background-size, @background-repeat){
+  background-image: url( @background-image );
+  background-size: @background-size;
+  background-repeat: @background-repeat;
+}
+
+/*---- LESS Styles ----*/
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -13,4 +39,74 @@
 
 .jumbotron {
   margin: 50px auto 0 auto;
+}
+
+/*---- Reset Boostrap ----*/
+.container{
+  width: 100%;
+  padding: 0;
+}
+section > .row{
+  width: 80%;
+  margin: auto;
+}
+
+/*---- Common ----*/
+h1{
+  .font(@font-family-hk-grotesk, 6em, bold, normal);
+  &.main-title{
+    color: @white;
+  }
+}
+.btn-lg{
+  .border-radius-lg();
+  .font("Helvetica", 1.2em, 200, normal);
+  padding: 10px 50px;
+}
+.btn-purple{
+  background-color: @maroon;
+  color: @white;
+}
+.marginT20{
+  margin-top: 20px;
+}
+
+/*---- Components ----*/
+.icon-card-row{
+  margin-top: 50px;
+}
+.icon-card{
+  text-align: center;
+  .card-image-wrap{
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    height: 55px;
+    .card-img-top{
+      width: 40%;
+      margin-bottom: 10px;
+    }
+  }
+  .card-text{
+    font-size: @font-normal;
+  }
+}
+
+/*---- Section ----*/
+.el-section-1{
+  height: 100vh;
+  padding: 150px 0;
+  .background-image("../images/bg/main.jpg", cover, no-repeat);
+
+  p{
+    .font(@font-family-hk-grotesk, 1.5em, 200, normal);
+    color: @steelblue;
+  }
 }

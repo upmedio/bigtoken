@@ -3115,6 +3115,12 @@ input[type="button"].btn-block {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
+  border-radius: 25px;
+  font-family: "Helvetica";
+  font-size: 1.2em;
+  font-weight: 200;
+  font-style: normal;
+  padding: 10px 50px;
 }
 .btn-group > .btn + .dropdown-toggle {
   padding-left: 8px;
@@ -7294,6 +7300,48 @@ td.visible-print {
 .fa-plus-square-o:before {
   content: "\f196";
 }
+/**
+ * @font-face LESS Mixin
+ * use: .font-face(
+ *   @font-family, // name
+ *   @file-path,   // absolute/relative URL to font files
+ *   @font-weight, // light/normal/bold/inherit | 300/400/700
+ *   @font-style   // italic/normal/inherit
+ * )
+ */
+@font-face {
+  font-family: HKGrotesk;
+  src: url('../fonts/hk-grotesk/HKGrotesk-Light.eot');
+  src: url('../fonts/hk-grotesk/HKGrotesk-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/hk-grotesk/HKGrotesk-Light.woff') format('woff'), url('../fonts/hk-grotesk/HKGrotesk-Light.ttf') format('truetype'), url('../fonts/hk-grotesk/HKGrotesk-Light.svg#../fonts/hk-grotesk/HKGrotesk-Light') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: HKGrotesk;
+  src: url('../fonts/hk-grotesk/HKGrotesk-Regular.eot');
+  src: url('../fonts/hk-grotesk/HKGrotesk-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/hk-grotesk/HKGrotesk-Regular.woff') format('woff'), url('../fonts/hk-grotesk/HKGrotesk-Regular.ttf') format('truetype'), url('../fonts/hk-grotesk/HKGrotesk-Regular.svg#../fonts/hk-grotesk/HKGrotesk-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: HKGrotesk;
+  src: url('../fonts/hk-grotesk/HKGrotesk-Bold.eot');
+  src: url('../fonts/hk-grotesk/HKGrotesk-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/hk-grotesk/HKGrotesk-Bold.woff') format('woff'), url('../fonts/hk-grotesk/HKGrotesk-Bold.ttf') format('truetype'), url('../fonts/hk-grotesk/HKGrotesk-Bold.svg#../fonts/hk-grotesk/HKGrotesk-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/**
+ * font LESS Mixin
+ * use: .font(
+ *   @font-family, // name
+ *   @file-size,   // any unit/inherit
+ *   @font-weight, // light/normal/bold/inherit | 300/400/700
+ *   @font-style   // italic/normal/inherit
+ * )
+ */
+/*---- Variable ----*/
+/*---- Mixin ----*/
+/*---- LESS Styles ----*/
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -7302,5 +7350,80 @@ td.visible-print {
 }
 .jumbotron {
   margin: 50px auto 0 auto;
+}
+/*---- Reset Boostrap ----*/
+.container {
+  width: 100%;
+  padding: 0;
+}
+section > .row {
+  width: 80%;
+  margin: auto;
+}
+/*---- Common ----*/
+h1 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: normal;
+}
+h1.main-title {
+  color: #ffffff;
+}
+.btn-lg {
+  border-radius: 25px;
+  font-family: "Helvetica";
+  font-size: 1.2em;
+  font-weight: 200;
+  font-style: normal;
+  padding: 10px 50px;
+}
+.btn-purple {
+  background-color: #992059;
+  color: #ffffff;
+}
+.marginT20 {
+  margin-top: 20px;
+}
+/*---- Components ----*/
+.icon-card-row {
+  margin-top: 50px;
+}
+.icon-card {
+  text-align: center;
+}
+.icon-card .card-image-wrap {
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 55px;
+}
+.icon-card .card-image-wrap .card-img-top {
+  width: 40%;
+  margin-bottom: 10px;
+}
+.icon-card .card-text {
+  font-size: 12px;
+}
+/*---- Section ----*/
+.el-section-1 {
+  height: 100vh;
+  padding: 150px 0;
+  background-image: url("../images/bg/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.el-section-1 p {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 200;
+  font-style: normal;
+  color: #4d697b;
 }
 /*# sourceMappingURL=/styles/main.css.map */

@@ -12,9 +12,13 @@
 @font-smaller: 10px;
 @font-small: 11px;
 @font-normal: 12px;
+@font-medium: 14px;
 
 //color
 @white: #FFF;
+@gold: #948171;
+@gulfstream: #4D697B;
+@lightgrey: #E8EDF1;
 @maroon: #992059;
 @steelblue: #4D697B;
 
@@ -23,10 +27,11 @@
 .border-radius-lg(){
   border-radius: 25px;
 }
-.background-image( @background-image, @background-size, @background-repeat){
+.background-image( @background-image, @background-size, @background-repeat, @background-position){
   background-image: url( @background-image );
   background-size: @background-size;
   background-repeat: @background-repeat;
+  background-position: @background-position;
 }
 
 /*---- LESS Styles ----*/
@@ -50,14 +55,27 @@ section > .row{
   width: 80%;
   margin: auto;
 }
-
-/*---- Common ----*/
-h1{
-  .font(@font-family-hk-grotesk, 6em, bold, normal);
-  &.main-title{
-    color: @white;
+.row{
+  margin-bottom: 20px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &.media-row{
+    margin: 0 0 50px;
+    &.first-row{
+      margin-top: 40px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }
+.row img{
+  max-width: 100%;
+}
+
+
+/*---- Common ----*/
 .btn-lg{
   .border-radius-lg();
   .font("Helvetica", 1.2em, 200, normal);
@@ -99,14 +117,70 @@ h1{
   }
 }
 
+.media{
+  > .pull-left {
+      margin-right: 20px;
+  }
+
+  .media-body{
+    font-size: @font-normal;
+    padding-right: 5%;
+
+    .media-heading{
+      margin-bottom: 5px;
+      line-height: 1.5em;
+      font-size: @font-medium;
+      color: @maroon;
+    }
+  }
+}
+
+/*---- Header ----*/
+.main-header{
+  position: fixed;
+  box-shadow: 0 1px 0 rgba(77,105,123,0.3);
+  width: 100%;
+  padding: 10px 11%;
+  z-index: 99999;
+}
+.logo-container{
+  display: block;
+  width: 200px;
+
+}
+
 /*---- Section ----*/
+.el-section{
+  section{
+    padding: 15vh 0;
+  }
+}
 .el-section-1{
-  height: 100vh;
-  padding: 150px 0;
-  .background-image("../images/bg/main.jpg", cover, no-repeat);
+  .background-image("../images/bg/main.jpg", cover, no-repeat, ~'');
 
   p{
     .font(@font-family-hk-grotesk, 1.5em, 200, normal);
     color: @steelblue;
+  }
+}
+.el-section-2{
+  padding: 30px 0 50px !important;
+  background-color: rgba(77,105,123,0.15);
+}
+.el-section-3{
+  padding: 4% 0 6% !important;
+  .background-image("../images/bg/challenges.png", contain, no-repeat, ~'');
+  background-color: #F9FAFE;
+}
+.el-section-4{
+  padding: 4% 0 6% !important;
+  .background-image("../images/bg/different.png", contain, no-repeat, center right);
+  background-color: #F9FAFE;
+
+  h3{
+    margin-bottom: 2%;
+  }
+  .main-title{
+    margin-bottom: 4%;
   }
 }

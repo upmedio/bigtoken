@@ -7325,6 +7325,13 @@ td.visible-print {
 }
 @font-face {
   font-family: HKGrotesk;
+  src: url('../fonts/hk-grotesk/HKGrotesk-Medium.eot');
+  src: url('../fonts/hk-grotesk/HKGrotesk-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/hk-grotesk/HKGrotesk-Medium.woff') format('woff'), url('../fonts/hk-grotesk/HKGrotesk-Medium.ttf') format('truetype'), url('../fonts/hk-grotesk/HKGrotesk-Medium.svg#../fonts/hk-grotesk/HKGrotesk-Medium') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: HKGrotesk;
   src: url('../fonts/hk-grotesk/HKGrotesk-Bold.eot');
   src: url('../fonts/hk-grotesk/HKGrotesk-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/hk-grotesk/HKGrotesk-Bold.woff') format('woff'), url('../fonts/hk-grotesk/HKGrotesk-Bold.ttf') format('truetype'), url('../fonts/hk-grotesk/HKGrotesk-Bold.svg#../fonts/hk-grotesk/HKGrotesk-Bold') format('svg');
   font-weight: bold;
@@ -7339,6 +7346,64 @@ td.visible-print {
  *   @font-style   // italic/normal/inherit
  * )
  */
+/*---- Font styles ---*/
+h1,
+h2,
+h3,
+h4 {
+  color: #948171;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span {
+  color: #4d697b;
+}
+h1 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: normal;
+}
+h1.main-title {
+  color: #ffffff;
+}
+.same-h1 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: normal;
+}
+.same-h1.main-title {
+  color: #ffffff;
+}
+.same-h1.shadow {
+  text-shadow: 0 2px 43px rgba(77, 105, 123, 0.6);
+}
+h2 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 4em;
+  font-weight: normal;
+  font-style: normal;
+}
+h2.main-title {
+  color: #ffffff;
+}
+h3 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 200;
+  font-style: normal;
+}
+h3.bold {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  font-style: normal;
+}
+h3.main-title {
+  color: #ffffff;
+}
 /*---- Variable ----*/
 /*---- Mixin ----*/
 /*---- LESS Styles ----*/
@@ -7360,16 +7425,25 @@ section > .row {
   width: 80%;
   margin: auto;
 }
+.row {
+  margin-bottom: 20px;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+.row.media-row {
+  margin: 0 0 50px;
+}
+.row.media-row.first-row {
+  margin-top: 40px;
+}
+.row.media-row:last-child {
+  margin-bottom: 0;
+}
+.row img {
+  max-width: 100%;
+}
 /*---- Common ----*/
-h1 {
-  font-family: "HKGrotesk", Helvetica, sans-serif;
-  font-size: 6em;
-  font-weight: bold;
-  font-style: normal;
-}
-h1.main-title {
-  color: #ffffff;
-}
 .btn-lg {
   border-radius: 25px;
   font-family: "Helvetica";
@@ -7411,13 +7485,40 @@ h1.main-title {
 .icon-card .card-text {
   font-size: 12px;
 }
+.media > .pull-left {
+  margin-right: 20px;
+}
+.media .media-body {
+  font-size: 12px;
+  padding-right: 5%;
+}
+.media .media-body .media-heading {
+  margin-bottom: 5px;
+  line-height: 1.5em;
+  font-size: 14px;
+  color: #992059;
+}
+/*---- Header ----*/
+.main-header {
+  position: fixed;
+  box-shadow: 0 1px 0 rgba(77, 105, 123, 0.3);
+  width: 100%;
+  padding: 10px 11%;
+  z-index: 99999;
+}
+.logo-container {
+  display: block;
+  width: 200px;
+}
 /*---- Section ----*/
+.el-section section {
+  padding: 15vh 0;
+}
 .el-section-1 {
-  height: 100vh;
-  padding: 150px 0;
   background-image: url("../images/bg/main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: ;
 }
 .el-section-1 p {
   font-family: "HKGrotesk", Helvetica, sans-serif;
@@ -7425,5 +7526,31 @@ h1.main-title {
   font-weight: 200;
   font-style: normal;
   color: #4d697b;
+}
+.el-section-2 {
+  padding: 30px 0 50px !important;
+  background-color: rgba(77, 105, 123, 0.15);
+}
+.el-section-3 {
+  padding: 4% 0 6% !important;
+  background-image: url("../images/bg/challenges.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: ;
+  background-color: #F9FAFE;
+}
+.el-section-4 {
+  padding: 4% 0 6% !important;
+  background-image: url("../images/bg/different.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: #F9FAFE;
+}
+.el-section-4 h3 {
+  margin-bottom: 2%;
+}
+.el-section-4 .main-title {
+  margin-bottom: 4%;
 }
 /*# sourceMappingURL=/styles/main.css.map */

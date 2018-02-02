@@ -6,20 +6,15 @@
 
 @import "font.less";
 
-
 /*---- Variable ----*/
-//font-size
-@font-smaller: 10px;
-@font-small: 11px;
-@font-normal: 12px;
-@font-medium: 14px;
-
 //color
 @white: #FFF;
+@darkgold: #53534A;
 @gold: #948171;
 @gulfstream: #4D697B;
 @lightgrey: #E8EDF1;
 @maroon: #992059;
+@forgedsteel: #B5C8D0;
 @steelblue: #4D697B;
 
 /*---- Mixin ----*/
@@ -32,6 +27,12 @@
   background-size: @background-size;
   background-repeat: @background-repeat;
   background-position: @background-position;
+}
+.border-box( @border-color, @border-width){
+  border: @border-color @border-width solid;
+}
+.box-shadow( @x-length, @y-length, @blur-radius, @color ){
+  box-shadow: @x-length @y-length @blur-radius @color;
 }
 
 /*---- LESS Styles ----*/
@@ -47,18 +48,31 @@
 }
 
 /*---- Reset Boostrap ----*/
+body{
+  line-height: 1.5em;
+  color: @darkgold;
+}
 .container{
   width: 100%;
   padding: 0;
 }
 section > .row{
   width: 80%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.full-width{
+    width: 100%;
+  }
 }
 .row{
   margin-bottom: 20px;
   &:last-child{
     margin-bottom: 0;
+  }
+
+  img{
+    max-width: 100%;
   }
   &.media-row{
     margin: 0 0 50px;
@@ -70,12 +84,11 @@ section > .row{
     }
   }
 }
-.row img{
-  max-width: 100%;
-}
-
 
 /*---- Common ----*/
+.gold{
+  color: @gold;
+}
 .btn-lg{
   .border-radius-lg();
   .font("Helvetica", 1.2em, 200, normal);
@@ -87,6 +100,23 @@ section > .row{
 }
 .marginT20{
   margin-top: 20px;
+}
+
+/*---- Number ----*/
+.bignumber{
+  margin-bottom: 30px;
+  font-family: @font-family-helvertica;
+  font-size: 65px;
+  font-weight: bold;
+  color: @forgedsteel;
+}
+
+/*---- Box ----*/
+.padding-box{
+  padding: 25px;
+}
+.gold-box{
+  .border-box( @gold, 1px);
 }
 
 /*---- Components ----*/
@@ -114,6 +144,22 @@ section > .row{
   }
   .card-text{
     font-size: @font-normal;
+  }
+}
+
+.person-cards{
+  .card{
+    margin-bottom: 25px;
+    h5{
+      margin-bottom: 0;
+    }
+    small{
+      font-size: @font-smaller;
+    }
+    .card-img-top{
+      border-left: @gold 5px solid;
+      .box-shadow( 0px, 1px, 6px, rgba(0,0,0,0.2) );
+    }
   }
 }
 
@@ -181,6 +227,59 @@ section > .row{
     margin-bottom: 2%;
   }
   .main-title{
+    margin-bottom: 4%;
+  }
+}
+
+.el-section-5{
+  padding: 4% 0 6% !important;
+  .background-image("../images/bg/about.png", cover, no-repeat, center);
+  background-color: #F9FAFE;
+
+  h3{
+    margin-bottom: 6%;
+  }
+  .overlap-box{
+    width: 50%;
+    padding-right: 5%;
+  }
+  .overlap-left{
+    width: 55%;
+    margin-left: -5%;
+  }
+
+  #video-link{
+    margin-top: 5%;
+  }
+}
+.el-section-6{
+  padding: 4% 0 6% !important;
+  background-color: #F9FAFE;
+}
+.el-section-7{
+  padding: 4% 0 6% !important;
+  background-color: #F9FAFE;
+  .background-image("../images/bg/ecosystem.png", contain, no-repeat, center left);
+}
+.el-section-8{
+  padding: 4% 0 6% !important;
+  background-color: #F9FAFE;
+}
+.el-section-9{
+  padding: 4% 0 6% !important;
+  background-color: #F9FAFE;
+  .background-image("../images/bg/team.png", แนอำพ, no-repeat, center);
+
+  #advisory_row{
+    margin-top: 8%;
+  }
+}
+.el-section-10{
+  padding: 10% 0 8% !important;
+  background-color: #F9FAFE;
+  .background-image("../images/bg/token_info.png", contain, no-repeat, bottom);
+
+  #token_info_label{
     margin-bottom: 4%;
   }
 }

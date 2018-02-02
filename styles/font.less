@@ -7,7 +7,14 @@
  *   @font-style   // italic/normal/inherit
  * )
  */
+ //font-size
+ @font-smaller: 10px;
+ @font-small: 11px;
+ @font-normal: 12px;
+ @font-medium: 14px;
+
 @font-family-hk-grotesk:  "HKGrotesk", Helvetica, sans-serif;
+@font-family-helvertica:  Helvetica, sans-serif;
 
 .font-face(@font-family, @file-path, @font-weight, @font-style) {
   @font-face {
@@ -44,7 +51,7 @@
 }
 
 /*---- Font styles ---*/
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
   color: @gold;
   span{
     color: @gulfstream;
@@ -79,4 +86,13 @@ h3{
   &.main-title{
     color: @white;
   }
+}
+h4{
+  .font(@font-family-hk-grotesk, 1.2em, 200, normal);
+}
+h5{
+  .font(@font-family-hk-grotesk, 1em, 600, normal);
+}
+p{
+  font-size: @font-normal;
 }

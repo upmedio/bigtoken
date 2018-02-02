@@ -7350,13 +7350,15 @@ td.visible-print {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   color: #948171;
 }
 h1 span,
 h2 span,
 h3 span,
-h4 span {
+h4 span,
+h5 span {
   color: #4d697b;
 }
 h1 {
@@ -7404,6 +7406,21 @@ h3.bold {
 h3.main-title {
   color: #ffffff;
 }
+h4 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  font-style: normal;
+}
+h5 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  font-style: normal;
+}
+p {
+  font-size: 12px;
+}
 /*---- Variable ----*/
 /*---- Mixin ----*/
 /*---- LESS Styles ----*/
@@ -7417,19 +7434,30 @@ h3.main-title {
   margin: 50px auto 0 auto;
 }
 /*---- Reset Boostrap ----*/
+body {
+  line-height: 1.5em;
+  color: #53534a;
+}
 .container {
   width: 100%;
   padding: 0;
 }
 section > .row {
   width: 80%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+section > .row.full-width {
+  width: 100%;
 }
 .row {
   margin-bottom: 20px;
 }
 .row:last-child {
   margin-bottom: 0;
+}
+.row img {
+  max-width: 100%;
 }
 .row.media-row {
   margin: 0 0 50px;
@@ -7440,10 +7468,10 @@ section > .row {
 .row.media-row:last-child {
   margin-bottom: 0;
 }
-.row img {
-  max-width: 100%;
-}
 /*---- Common ----*/
+.gold {
+  color: #948171;
+}
 .btn-lg {
   border-radius: 25px;
   font-family: "Helvetica";
@@ -7458,6 +7486,21 @@ section > .row {
 }
 .marginT20 {
   margin-top: 20px;
+}
+/*---- Number ----*/
+.bignumber {
+  margin-bottom: 30px;
+  font-family: Helvetica, sans-serif;
+  font-size: 65px;
+  font-weight: bold;
+  color: #b5c8d0;
+}
+/*---- Box ----*/
+.padding-box {
+  padding: 25px;
+}
+.gold-box {
+  border: #948171 1px solid;
 }
 /*---- Components ----*/
 .icon-card-row {
@@ -7484,6 +7527,19 @@ section > .row {
 }
 .icon-card .card-text {
   font-size: 12px;
+}
+.person-cards .card {
+  margin-bottom: 25px;
+}
+.person-cards .card h5 {
+  margin-bottom: 0;
+}
+.person-cards .card small {
+  font-size: 10px;
+}
+.person-cards .card .card-img-top {
+  border-left: #948171 5px solid;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
 }
 .media > .pull-left {
   margin-right: 20px;
@@ -7551,6 +7607,66 @@ section > .row {
   margin-bottom: 2%;
 }
 .el-section-4 .main-title {
+  margin-bottom: 4%;
+}
+.el-section-5 {
+  padding: 4% 0 6% !important;
+  background-image: url("../images/bg/about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F9FAFE;
+}
+.el-section-5 h3 {
+  margin-bottom: 6%;
+}
+.el-section-5 .overlap-box {
+  width: 50%;
+  padding-right: 5%;
+}
+.el-section-5 .overlap-left {
+  width: 55%;
+  margin-left: -5%;
+}
+.el-section-5 #video-link {
+  margin-top: 5%;
+}
+.el-section-6 {
+  padding: 4% 0 6% !important;
+  background-color: #F9FAFE;
+}
+.el-section-7 {
+  padding: 4% 0 6% !important;
+  background-color: #F9FAFE;
+  background-image: url("../images/bg/ecosystem.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.el-section-8 {
+  padding: 4% 0 6% !important;
+  background-color: #F9FAFE;
+}
+.el-section-9 {
+  padding: 4% 0 6% !important;
+  background-color: #F9FAFE;
+  background-image: url("../images/bg/team.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.el-section-9 #advisory_row {
+  margin-top: 8%;
+}
+.el-section-10 {
+  padding: 10% 0 8% !important;
+  background-color: #F9FAFE;
+  background-image: url("../images/bg/token_info.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.el-section-10 #token_info_label {
   margin-bottom: 4%;
 }
 /*# sourceMappingURL=/styles/main.css.map */

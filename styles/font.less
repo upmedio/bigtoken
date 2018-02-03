@@ -9,9 +9,9 @@
  */
  //font-size
  @font-smaller: 10px;
- @font-small: 11px;
- @font-normal: 12px;
- @font-medium: 14px;
+ @font-small: 12px;
+ @font-normal: 18px;
+ @font-medium: 20px;
 
 @font-family-hk-grotesk:  "HKGrotesk", Helvetica, sans-serif;
 @font-family-helvertica:  Helvetica, sans-serif;
@@ -52,9 +52,9 @@
 
 /*---- Font styles ---*/
 h1,h2,h3,h4,h5{
-  color: @gold;
+  color: @someblue;
   span{
-    color: @gulfstream;
+    color: @gold;
   }
 }
 h1{
@@ -66,7 +66,7 @@ h1{
 .same-h1{
   .font(@font-family-hk-grotesk, 6em, bold, normal);
   &.main-title{
-    color: @white;
+    color: @someblue;
   }
   &.shadow{
     text-shadow: 0 2px 43px rgba(77,105,123,0.6);
@@ -95,4 +95,8 @@ h5{
 }
 p{
   font-size: @font-normal;
+  line-height: 30px;
+  color: #000;
+  font-family: @font-family-helvertica;
 }
+

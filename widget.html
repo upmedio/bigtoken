@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/ico-progress-viewer-public.css" rel="stylesheet" >
+    <script
+			  src="http://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" charset="utf-8" async="" src="js/web3.1.0.0-beta.29.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="js/moment.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="js/bignumber.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="js/ico-progress-viewer-public.js"></script>
+</head>
+<body>
+<div class="ico-progress-viewer">
+
+    <!-- Loading mode -->
+    <div class="mode mode-loading">
+        <i>Loading...</i>
+    </div>
+
+    <!-- BEFORE CROWDSALE -->
+    <div class="hide mode mode-pre-sale">
+        The ICO will begin <span class="date start-date"></span>
+        <div class="countdown"></div>
+    </div>
+
+    <!-- DURING CROWDSALE -->
+    <div class="hide mode mode-on-sale">
+        <h2>Smart contract address: <a class="contract-address" href="#"></a></h2>
+
+        <h2>Raised so far</h2>
+
+        <div class="progress-bar-outer" data-progress-value="0 ETH">
+            <div class="progress-bar-inner">
+            </div>
+        </div>
+
+        <div class="countdown"></div>
+        The ICO will end <span class="date end-date"></span>
+
+        <h2>Additional info</h2>
+        <div>
+            Min cap: <strong class="min-cap"></strong> <br>
+            Max cap: <strong class="max-cap"></strong>
+        </div>
+    </div>
+
+     <!-- AFTER CROWDSALE -->
+    <div class="hide mode mode-post-sale">
+        The ICO has ended. The total raised was <span class="total-raised-amount">0</span> ETH
+    </div>
+
+</div>
+
+</body>
+</html>

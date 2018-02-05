@@ -6250,7 +6250,7 @@ section > .row.full-width {
 }
 .person-cards .card .card-text p {
   line-height: 15px;
-  font-size: 14px;
+  font-size: 12px;
   color: white;
   font-weight: 400;
   margin-top: -90px;
@@ -6380,6 +6380,7 @@ section > .row.full-width {
   border-radius: 25px;
   padding: 12px 30px;
   font-size: 20px;
+  white-space: nowrap;
   transition: 0.3s linear;
 }
 .main-header .main_menu .contribute a:hover {
@@ -6436,7 +6437,12 @@ section > .row.full-width {
 .main-header .main_menu .menu li:last-child {
   margin-right: 0;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 930px) {
+  .main-header .main_menu .menu li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
   .main-header .main_menu {
     width: 100%;
     clear: both;
@@ -6498,6 +6504,17 @@ section > .row.full-width {
   border-color: #183547;
   color: #183547;
   padding: 20px;
+}
+.el-section-1 .form-message {
+  display: none;
+  border: 2px solid #992059;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.el-section-1 .form-message p {
+  color: #183547;
+  margin-bottom: 0;
 }
 .el-section-1 .btn {
   background-color: #992059;

@@ -21,6 +21,10 @@ jQuery(document).ready(function ($) {
             type: 'image'
         });
     });
+    $('body').on('click', '#send_later', function (event) {
+        event.preventDefault();
+        $('.form-message').show();
+    });
     $('body').on('click', '#Liam', function (event) {
         event.preventDefault();
         $.magnificPopup.open({

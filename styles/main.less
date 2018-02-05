@@ -197,7 +197,7 @@ section > .row {
       p {
 
         line-height: 15px;
-        font-size: 14px;
+        font-size: 12px;
         color: white;
         font-weight: 400;
         margin-top: -90px;
@@ -331,6 +331,7 @@ section > .row {
         border-radius: 25px;
         padding: 12px 30px;
         font-size: 20px;
+        white-space: nowrap;
         transition: 0.3s linear;
         &:hover{
           text-decoration: none;
@@ -388,7 +389,16 @@ section > .row {
         margin-right: 0;
       }
     }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) and (max-width: 930px){
+      .menu{
+        li {
+          a{
+            font-size:14px;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
       width: 100%;
       clear: both;
       float: none;
@@ -453,6 +463,17 @@ section > .row {
       border-color: @someblue;
       color:@someblue;
       padding: 20px;
+    }
+  }
+  .form-message{
+    display: none;
+    border:2px solid @maroon;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    p{
+      color: @someblue;
+      margin-bottom: 0;
     }
   }
   .btn{

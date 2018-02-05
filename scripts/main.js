@@ -1,40 +1,42 @@
 jQuery(document).ready(function ($) {
-    var media_ChiangMai = [{
-        src: '/images/locations/ChiangMai/IMG_4816.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4817.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4818.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4819.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4820.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4821.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4822.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4823.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4824.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4825.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4855.JPG'
-    }, {
-        src: '/images/locations/ChiangMai/IMG_4856.JPG'
-    }];
 
-    $('body').on('click', '#media1', function () {
+
+    $('body').on('click', '#ChiangMai_med', function (event) {
+        event.preventDefault();
         $.magnificPopup.open({
             items: media_ChiangMai,
-
             gallery: {
                 enabled: true
             },
-            zoom: {
-                enabled: true,
-                duration: 300, // don't foget to change the duration also in CSS
+            type: 'image'
+        });
+    });
+    $('body').on('click', '#Chaweng', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_Chaweng,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+    $('body').on('click', '#Liam', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_Liam,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+    $('body').on('click', '#BinhDong', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_BinhDong,
+            gallery: {
+                enabled: true
             },
             type: 'image'
         });
@@ -44,7 +46,6 @@ jQuery(document).ready(function ($) {
         if ($tgt.closest(".text_map_area").length || $tgt.closest("#mapname").length) {
         }
         else {
-
             $('.text_map_area').hide();
         }
 

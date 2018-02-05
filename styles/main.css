@@ -6250,7 +6250,7 @@ section > .row.full-width {
 }
 .person-cards .card .card-text p {
   line-height: 15px;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   font-weight: 400;
   margin-top: -90px;
@@ -6472,6 +6472,14 @@ section > .row.full-width {
   background-repeat: no-repeat;
   background-position: '';
 }
+@media (min-width: 991px) {
+  .el-section-1 .main-title {
+    margin-top: 150px;
+  }
+}
+.el-section-1 form {
+  margin-top: 50px;
+}
 .el-section-1 p {
   font-family: "HKGrotesk", Helvetica, sans-serif;
   font-size: 1.5em;
@@ -6482,6 +6490,15 @@ section > .row.full-width {
   color: #183547;
   font-weight: 600;
 }
+.el-section-1 .form-groups {
+  margin-bottom: 15px;
+}
+.el-section-1 .form-groups input.form-control {
+  background-color: transparent;
+  border-color: #183547;
+  color: #183547;
+  padding: 20px;
+}
 .el-section-1 .btn {
   background-color: #992059;
   color: white;
@@ -6489,6 +6506,16 @@ section > .row.full-width {
   padding: 12px 30px;
   font-size: 20px;
   transition: 0.3s linear;
+}
+.el-section-1 .btn.btn-blue {
+  width: 100%;
+  background-color: #183547;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.el-section-1 .btn.btn-blue:hover {
+  box-shadow: 0 0 1px 1px #183547;
 }
 .el-section-1 .btn:hover {
   box-shadow: 0 0 1px 1px #992059;
@@ -6577,41 +6604,41 @@ section > .row.full-width {
   font-size: 40px;
   color: white;
 }
-.el-section-6 .nav-tabs {
+.el-section-6 .nav-tabs#myTab {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.el-section-6 .nav-tabs .nav-item {
+.el-section-6 .nav-tabs#myTab > .nav-item {
   float: none;
   flex: 1;
   text-align: center;
 }
-.el-section-6 .nav-tabs .nav-item.active a,
-.el-section-6 .nav-tabs .nav-item:hover a {
+.el-section-6 .nav-tabs#myTab > .nav-item.active a,
+.el-section-6 .nav-tabs#myTab > .nav-item:hover a {
   color: #183547;
 }
-.el-section-6 .nav-tabs .nav-item.active a:hover,
-.el-section-6 .nav-tabs .nav-item:hover a:hover,
-.el-section-6 .nav-tabs .nav-item.active a:focus,
-.el-section-6 .nav-tabs .nav-item:hover a:focus {
+.el-section-6 .nav-tabs#myTab > .nav-item.active a:hover,
+.el-section-6 .nav-tabs#myTab > .nav-item:hover a:hover,
+.el-section-6 .nav-tabs#myTab > .nav-item.active a:focus,
+.el-section-6 .nav-tabs#myTab > .nav-item:hover a:focus {
   border: none;
 }
-.el-section-6 .nav-tabs .nav-item.active i.vietnam:before,
-.el-section-6 .nav-tabs .nav-item:hover i.vietnam:before {
+.el-section-6 .nav-tabs#myTab > .nav-item.active i.vietnam:before,
+.el-section-6 .nav-tabs#myTab > .nav-item:hover i.vietnam:before {
   background-image: url("../images/icons/map_vn.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.el-section-6 .nav-tabs .nav-item.active i.thai:before,
-.el-section-6 .nav-tabs .nav-item:hover i.thai:before {
+.el-section-6 .nav-tabs#myTab > .nav-item.active i.thai:before,
+.el-section-6 .nav-tabs#myTab > .nav-item:hover i.thai:before {
   background-image: url("../images/icons/map_th.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.el-section-6 .nav-tabs .nav-item a {
+.el-section-6 .nav-tabs#myTab > .nav-item a {
   border: none;
   margin-right: 0;
   color: white;
@@ -6623,27 +6650,27 @@ section > .row.full-width {
   font-weight: 600;
   line-height: 18px;
 }
-.el-section-6 .nav-tabs .nav-item a i {
+.el-section-6 .nav-tabs#myTab > .nav-item a i {
   margin-right: 6px;
 }
 @media (max-width: 768px) {
-  .el-section-6 .nav-tabs .nav-item a i {
+  .el-section-6 .nav-tabs#myTab > .nav-item a i {
     display: block;
   }
 }
-.el-section-6 .nav-tabs .nav-item a i:before {
+.el-section-6 .nav-tabs#myTab > .nav-item a i:before {
   content: "";
   width: 20px;
   height: 28px;
   display: inline-block;
 }
-.el-section-6 .nav-tabs .nav-item a i.vietnam:before {
+.el-section-6 .nav-tabs#myTab > .nav-item a i.vietnam:before {
   background-image: url("../images/icons/white_map_vn.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 'center';
 }
-.el-section-6 .nav-tabs .nav-item a i.thai:before {
+.el-section-6 .nav-tabs#myTab > .nav-item a i.thai:before {
   background-image: url("../images/icons/white_map_th.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -6807,6 +6834,7 @@ section > .row.full-width {
   margin-bottom: 4%;
 }
 .ico-progress-viewer {
+  display: none!important;
   margin-top: 30px;
   border: 2px solid #948171;
   padding: 9%;

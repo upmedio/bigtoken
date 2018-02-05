@@ -197,7 +197,7 @@ section > .row {
       p {
 
         line-height: 15px;
-        font-size: 16px;
+        font-size: 14px;
         color: white;
         font-weight: 400;
         margin-top: -90px;
@@ -430,13 +430,29 @@ section > .row {
 
 .el-section-1 {
   .background-image("../images/bg/main.jpg", cover, no-repeat, '');
-
+  @media (min-width:991px){
+    .main-title{
+      margin-top: 150px;
+    }
+  }
+  form{
+    margin-top: 50px;
+  }
   p {
     .font(@font-family-hk-grotesk, 1.5em, 200, normal);
 
     &.subtitle {
       color: @someblue;
       font-weight: 600;
+    }
+  }
+  .form-groups{
+    margin-bottom: 15px;
+    input.form-control{
+      background-color: transparent;
+      border-color: @someblue;
+      color:@someblue;
+      padding: 20px;
     }
   }
   .btn{
@@ -446,10 +462,21 @@ section > .row {
     padding: 12px 30px;
     font-size: 20px;
     transition: 0.3s linear;
+    &.btn-blue{
+      width: 100%;
+      background-color: @someblue;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      &:hover{
+        box-shadow: 0 0 1px 1px @someblue;
+      }
+    }
     &:hover{
       box-shadow: 0 0 1px 1px @maroon;
     }
   }
+
 }
 
 .el-section-2 {
@@ -533,11 +560,11 @@ section > .row {
     color: white;
   }
 
-  .nav-tabs {
+  .nav-tabs#myTab {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    .nav-item {
+    > .nav-item {
       float: none;
       flex: 1;
       text-align: center;
@@ -751,6 +778,7 @@ section > .row {
 }
 
 .ico-progress-viewer {
+  display: none!important;
   margin-top: 30px;
   border: 2px solid @gold;
   padding: 9%;

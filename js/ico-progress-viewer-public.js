@@ -19,6 +19,7 @@
         let token = {
             decimals: 18,
         };
+        let checkonce = 1;
         token.div=new BigNumber('1e'+token.decimals);
 
         let quickMap={};
@@ -208,7 +209,11 @@
 
 
             console.log('startDate',startDate,endDate);
-
+            if(checkonce == 1){
+                document.querySelector(".ico-progress-viewer").className+=" animated bounceInLeft";
+                document.querySelector(".ico-progress-viewer").style.display = "block";
+                checkonce = 0;
+            }
             let mode = getMode(startDate,endDate);
 
             console.log('mode',mode);

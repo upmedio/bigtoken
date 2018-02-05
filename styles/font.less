@@ -59,12 +59,18 @@ h1,h2,h3,h4,h5{
 }
 h1{
   .font(@font-family-hk-grotesk, 6em, bold, normal);
+  @media (max-width:768px){
+    .font(@font-family-hk-grotesk, 5em, bold, normal);
+  }
   &.main-title{
     color: @white;
   }
 }
 .same-h1{
   .font(@font-family-hk-grotesk, 6em, bold, normal);
+  @media (max-width:768px){
+    .font(@font-family-hk-grotesk, 3em, bold, normal);
+  }
   &.main-title{
     color: @someblue;
   }
@@ -74,6 +80,10 @@ h1{
 }
 h2{
   .font(@font-family-hk-grotesk, 4em, normal, normal);
+
+  @media (max-width:768px){
+    .font(@font-family-hk-grotesk, 2em, normal, normal);
+  }
   &.main-title{
     color: @white;
   }

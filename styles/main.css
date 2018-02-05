@@ -7251,3 +7251,6 @@ section > .row.full-width {
   -webkit-animation-name: bounceInLeft2;
   animation-name: bounceInLeft2;
 }
+.mfp-wrap {
+  z-index: 5000000;
+}

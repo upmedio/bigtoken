@@ -31,11 +31,11 @@ var media_ChiangMai = [{
 }, {
     src: '/images/locations/ChiangMai/BuildingInterior/5.jpg'
 }, {
-    src: '/images/locations/ChiangMai/BuildingInterior/6.JPG'
+    src: '/images/locations/ChiangMai/BuildingInterior/6.jpg'
 }, {
-    src: '/images/locations/ChiangMai/BuildingInterior/7.JPG'
+    src: '/images/locations/ChiangMai/BuildingInterior/7.jpg'
 }, {
-    src: '/images/locations/ChiangMai/BuildingInterior/8.JPG'
+    src: '/images/locations/ChiangMai/BuildingInterior/8.jpg'
 }, {
     src: '/images/locations/ChiangMai/BuildingInterior/9.jpg'
 }, {
@@ -66,25 +66,25 @@ var media_Chaweng = [
         src: '/images/locations/Chaweng/Chaweng2.png'
     },
     {
-        src: '/images/locations/Chaweng/SiteB-Chawen-tive01.jpg'
+        src: '/images/locations/Chaweng/SiteB-Chaweng-tive01.jpg'
     },
     {
-        src: '/images/locations/Chaweng/SiteB-Chawen-tive02.jpg'
+        src: '/images/locations/Chaweng/SiteB-Chaweng-tive02.jpg'
     },
     {
-        src: '/images/locations/Chaweng/SiteB-Chawen-tive03.jpg'
+        src: '/images/locations/Chaweng/SiteB-Chaweng-tive03.jpg'
     },
     {
-        src: '/images/locations/Chaweng/SiteB-Chawen-tive04.jpg'
+        src: '/images/locations/Chaweng/SiteB-Chaweng-tive04.jpg'
     },
     {
-        src: '/images/locations/Chaweng/SiteB-Chawen-tive05.jpg'
+        src: '/images/locations/Chaweng/SiteB-Chaweng-tive05.jpg'
     },
     {
-        src: '/images/locations/Chaweng/SiteB-Chawen-tive06.jpg'
+        src: '/images/locations/Chaweng/SiteB-Chaweng-tive06.jpg'
     },
     {
-        src: '/images/locations/Chaweng/SiteB-Chawen-tive07.jpg'
+        src: '/images/locations/Chaweng/SiteB-Chaweng-tive07.jpg'
     }
 
 ];

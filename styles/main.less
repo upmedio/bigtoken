@@ -861,7 +861,7 @@ section > .row {
 .el-section-11 {
   padding: 1% 0 1% !important;
   background-color: #F9FAFE;
-  .background-image("../images/bg/token_sale.png", contain, no-repeat, center left);
+  .background-image("../images/bg/bigtoken_bg.png", contain, no-repeat, center left);
 }
 
 .el-section-12 {
@@ -1068,17 +1068,14 @@ section > .row {
 }
 
 .flex-counters {
-  display: flex;
   margin-bottom: 10px;
-  flex-wrap: wrap-reverse;
+  >div:first-child{
+    padding-top: 15px;
+  }
   @media (max-width: 768px) {
-    justify-content: space-around;
     * {
       text-align: center !important;
     }
-  }
-  div:nth-child(2n) {
-    align-self: flex-end;
   }
   p {
     font-size: @font-medium;

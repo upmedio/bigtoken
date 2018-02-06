@@ -35,7 +35,7 @@ jQuery(document).ready(function ($) {
             type: 'image'
         });
     });
-    $('body').on('click', '#BinhDong', function (event) {
+    $('body').on('click', '#binh_med', function (event) {
         event.preventDefault();
         $.magnificPopup.open({
             items: media_BinhDong,

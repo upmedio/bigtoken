@@ -91,16 +91,16 @@ var media_Chaweng = [
 
 var media_Liam = [
     {
-        src: '/images/locations/LaemDin/LaemDin.jpg'
+        src: '/images/locations/LaemDin/LaemDin.png'
     },
     {
-        src: '/images/locations/LaemDin/LaemDin2.jpg'
+        src: '/images/locations/LaemDin/LaemDin2.png'
     },
     {
-        src: '/images/locations/LaemDin/LaemDin3.jpg'
+        src: '/images/locations/LaemDin/LaemDin3.png'
     },
     {
-        src: '/images/locations/LaemDin/LaemDin1.jpg'
+        src: '/images/locations/LaemDin/LaemDin1.png'
     }
 
 ];

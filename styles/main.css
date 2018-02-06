@@ -6281,7 +6281,7 @@ section > .row.full-width {
 }
 @media (max-width: 768px) {
   .media > .pull-left {
-    float: none!important;
+    float: none !important;
     margin-bottom: 10px;
   }
   .media > .pull-left img {
@@ -6693,6 +6693,19 @@ section > .row.full-width {
   background-repeat: no-repeat;
   background-position: 'center';
 }
+.el-section-6 #myTab2 {
+  border: none;
+}
+.el-section-6 #myTab2 li a {
+  border: none;
+  color: #183547;
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+}
+.el-section-6 #myTab2 li.active a {
+  font-weight: bold;
+}
 .el-section-6 .tab-content {
   background-color: white;
   padding: 10px 10px;
@@ -6851,7 +6864,7 @@ section > .row.full-width {
   margin-bottom: 4%;
 }
 .ico-progress-viewer {
-  display: none!important;
+  display: none !important;
   margin-top: 30px;
   border: 2px solid #948171;
   padding: 9%;

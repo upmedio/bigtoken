@@ -153,7 +153,7 @@ section > .row {
 
     height: 55px;
     .card-img-top {
-      @media (min-width: 768px){
+      @media (min-width: 768px) {
         width: 80%;
 
       }
@@ -212,7 +212,7 @@ section > .row {
         opacity: 1;
         display: block;
         transition: 1s linear;
-        p{
+        p {
           margin-top: 0;
         }
       }
@@ -224,14 +224,14 @@ section > .row {
 }
 
 .media {
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     text-align: center;
   }
   > .pull-left {
-    @media (max-width: 768px){
-      float: none!important;
+    @media (max-width: 768px) {
+      float: none !important;
       margin-bottom: 10px;
-      img{
+      img {
         margin: 0 auto;
       }
     }
@@ -290,7 +290,7 @@ section > .row {
   padding: 10px 11%;
   z-index: 99999;
   transition: all 0.3s linear;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     background: white;
   }
   &.scrolling {
@@ -333,7 +333,7 @@ section > .row {
         font-size: 20px;
         white-space: nowrap;
         transition: 0.3s linear;
-        &:hover{
+        &:hover {
           text-decoration: none;
           box-shadow: 0 0 1px 1px @maroon;
         }
@@ -389,11 +389,11 @@ section > .row {
         margin-right: 0;
       }
     }
-    @media (min-width: 768px) and (max-width: 930px){
-      .menu{
+    @media (min-width: 768px) and (max-width: 930px) {
+      .menu {
         li {
-          a{
-            font-size:14px;
+          a {
+            font-size: 14px;
           }
         }
       }
@@ -424,7 +424,7 @@ section > .row {
   display: block;
   width: 5%;
   float: left;
-  img{
+  img {
 
     width: 44px;
     height: 47px;
@@ -440,12 +440,12 @@ section > .row {
 
 .el-section-1 {
   .background-image("../images/bg/main.jpg", cover, no-repeat, '');
-  @media (min-width:991px){
-    .main-title{
+  @media (min-width: 991px) {
+    .main-title {
       margin-top: 150px;
     }
   }
-  form{
+  form {
     margin-top: 50px;
   }
   p {
@@ -456,44 +456,44 @@ section > .row {
       font-weight: 600;
     }
   }
-  .form-groups{
+  .form-groups {
     margin-bottom: 15px;
-    input.form-control{
+    input.form-control {
       background-color: transparent;
       border-color: @someblue;
-      color:@someblue;
+      color: @someblue;
       padding: 20px;
     }
   }
-  .form-message{
+  .form-message {
     display: none;
-    border:2px solid @maroon;
+    border: 2px solid @maroon;
     text-align: center;
     padding: 10px 20px;
     margin-top: 20px;
-    p{
+    p {
       color: @someblue;
       margin-bottom: 0;
     }
   }
-  .btn{
+  .btn {
     background-color: @maroon;
     color: white;
     border-radius: 25px;
     padding: 12px 30px;
     font-size: 20px;
     transition: 0.3s linear;
-    &.btn-blue{
+    &.btn-blue {
       width: 100%;
       background-color: @someblue;
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       border-radius: 0;
-      &:hover{
+      &:hover {
         box-shadow: 0 0 1px 1px @someblue;
       }
     }
-    &:hover{
+    &:hover {
       box-shadow: 0 0 1px 1px @maroon;
     }
   }
@@ -528,7 +528,7 @@ section > .row {
     font-family: @font-family-hk-grotesk;
     font-size: 40px;
 
-    @media (max-width:468px){
+    @media (max-width: 468px) {
       font-size: 30px;
     }
     font-weight: 600;
@@ -641,10 +641,28 @@ section > .row {
       }
     }
   }
+  #myTab2 {
+    border: none;
+    li {
+      a {
+        border: none;
+        color: #183547;
+        font-family: @font-family-hk-grotesk;
+        font-size: 20px;
+        line-height: 18px;
+
+      }
+      &.active {
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+  }
   .tab-content {
     background-color: white;
     padding: 10px 10px;
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       padding: 10px 50px;
     }
 
@@ -713,7 +731,7 @@ section > .row {
 .el-section-7 {
   padding: 4% 0 6% !important;
   background-color: #F9FAFE;
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     .background-image("../images/bg/ecosystem_bg.png", 50%, no-repeat, center left);
   }
   h2 {
@@ -735,12 +753,12 @@ section > .row {
     left: 50%;
     top: 50%;
     text-align: left;
-    transform:  translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background: #183547;
     padding: 15px;
-    border-radius:  20px;
+    border-radius: 20px;
     p {
-      color:  white;
+      color: white;
     }
   }
 
@@ -799,7 +817,7 @@ section > .row {
 }
 
 .ico-progress-viewer {
-  display: none!important;
+  display: none !important;
   margin-top: 30px;
   border: 2px solid @gold;
   padding: 9%;
@@ -815,7 +833,7 @@ section > .row {
     color: @someblue;
     font-family: @font-family-helvertica;
     font-size: 48.4px;
-    @media (max-width:768px){
+    @media (max-width: 768px) {
       font-size: 30px;
     }
     font-weight: bold;
@@ -1173,7 +1191,6 @@ section > .row {
           transition: all 0.75s ease 0.5s;
         }
 
-
       }
     }
 
@@ -1232,37 +1249,38 @@ section > .row {
 
   }
 }
+
 @keyframes bounceInLeft2 {
-  0%,60%,75%,90%,to {
-    -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
-    animation-timing-function: cubic-bezier(.215,.61,.355,1)
+  0%, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1)
   }
 
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-3000px,0,0);
-    transform: translate3d(-3000px,0,0)
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0)
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(-44%,-50%,0);
-    transform: translate3d(-56%,-50%,0)
+    -webkit-transform: translate3d(-44%, -50%, 0);
+    transform: translate3d(-56%, -50%, 0)
   }
 
   75% {
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-56%,-50%,0)
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-56%, -50%, 0)
   }
 
   90% {
-    -webkit-transform: translate3d(5px,0,0);
-    transform: translate3d(-48%,-50%,0)
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(-48%, -50%, 0)
   }
 
   to {
-    -webkit-transform:  translate(-50%,-50%);
-    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
   }
 }
 
@@ -1270,6 +1288,7 @@ section > .row {
   -webkit-animation-name: bounceInLeft2;
   animation-name: bounceInLeft2
 }
+
 .mfp-wrap {
   z-index: 5000000;
 }

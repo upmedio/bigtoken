@@ -35,6 +35,10 @@ jQuery(document).ready(function ($) {
             type: 'image'
         });
     });
+
+    $('.tl-item').click(function () {
+        $(this).toggleClass('active');
+    });
     $('body').on('click', '#binh_med', function (event) {
         event.preventDefault();
         $.magnificPopup.open({
@@ -44,6 +48,14 @@ jQuery(document).ready(function ($) {
             },
             type: 'image'
         });
+    });
+    $('#contact_us').submit(function(event) {
+        $('#message_block').html('<p>Thank you</p>');
+        $('#message_block').show();
+
+
+        // stop the form from submitting the normal way and refreshing the page
+        event.preventDefault();
     });
     $('.counter').counterUp({
         delay: 10,

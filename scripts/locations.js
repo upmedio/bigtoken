@@ -94,7 +94,7 @@ var media_Liam = [
         src: '/images/locations/LaemDin/LaemDin.png'
     },
     {
-        src: '/images/locations/LaemDin/LaemDin2.png'
+        src: '/images/locations/LaemDin/LeamDin2.png'
     },
     {
         src: '/images/locations/LaemDin/LaemDin3.png'

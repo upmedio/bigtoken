@@ -6108,12 +6108,6 @@ p {
   color: #000;
   font-family: Helvetica, sans-serif;
 }
-@media (max-width: 768px) {
-  p {
-    font-size: 14px;
-    line-height: 1.6em;
-  }
-}
 /*---- Variable ----*/
 /*---- Mixin ----*/
 /*---- LESS Styles ----*/
@@ -6255,12 +6249,6 @@ section > .row.full-width {
   border-left: #992059 5px solid;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
   max-height: 200px;
-}
-@media (max-width: 768px) {
-  .person-cards .card .card-img-top {
-    width: 100%;
-    max-height: inherit;
-  }
 }
 .person-cards .card .card-text {
   display: none;

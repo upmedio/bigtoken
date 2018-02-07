@@ -46,9 +46,34 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    $('body').on('click', '#natien_m', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_natien,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+    $('body').on('click', '#krabi_m', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_krabi,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+
+
 
     $('.tl-item').click(function () {
-        $(this).toggleClass('active');
+        if ($(window).width() < 768) {
+            $('.tl-item').removeClass('active');
+            $(this).addClass('active');
+        }
     });
     $('body').on('click', '#binh_med', function (event) {
         event.preventDefault();
@@ -61,6 +86,9 @@ jQuery(document).ready(function ($) {
         });
     });
     $('#contact_us').submit(function(event) {
+
+        var data = $(this).serializeArray();
+
         $('#message_block').html('<p>Thank you</p>');
         $('#message_block').show();
 

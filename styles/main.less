@@ -213,6 +213,10 @@ section > .row {
       overflow: hidden;
       height: 320px;
       transition: 1s linear;
+
+      @media (max-width: 991px){
+        height: 350px;
+      }
       p {
 
         line-height: 15px;
@@ -221,6 +225,9 @@ section > .row {
         font-weight: 400;
         margin-top: -90px;
         transition: 0s linear;
+        @media (max-width: 991px){
+          font-size: 14px;
+        }
       }
     }
     .card-front {
@@ -342,11 +349,10 @@ section > .row {
       float: right;
       width: 15%;
       text-align: right;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         display: none;
       }
       a {
-
         background-color: @maroon;
         color: white;
         border-radius: 25px;
@@ -470,6 +476,9 @@ section > .row {
 
 .el-section-1 {
   .background-image("../images/bg/main.jpg", cover, no-repeat, '');
+  @media (max-width: 768px) {
+    .background-image("../images/bg/banner_mobile.jpg", cover, no-repeat, '');
+  }
   @media (min-width: 991px) {
     .main-title {
       margin-top: 150px;
@@ -616,6 +625,9 @@ section > .row {
     font-size: 40px;
     color: white;
   }
+  h4 {
+    color: white;
+  }
 
   .nav-tabs#myTab {
     display: flex;
@@ -689,11 +701,12 @@ section > .row {
         font-family: @font-family-hk-grotesk;
         font-size: 20px;
         line-height: 18px;
-
+        font-weight: 300;
       }
       &.active {
         a {
           font-weight: bold;
+          text-decoration: underline;
         }
       }
     }
@@ -1293,13 +1306,21 @@ section > .row {
     z-index: 1;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-
     p {
       font-family: @font-family-helvertica;
       font-size: 30px;
       line-height: 50px;
       margin: 0;
       color: #ffffff;
+    }
+
+    @media (max-width: 767px){
+
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      p {
+        color: black;
+      }
     }
   }
 

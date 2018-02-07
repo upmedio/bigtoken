@@ -4,17 +4,7 @@ var media_ChiangMai = [{
     src: '/images/locations/ChiangMai/IMG_4817.JPG'
 }, {
     src: '/images/locations/ChiangMai/IMG_4818.JPG'
-}, {
-    src: '/images/locations/ChiangMai/IMG_4819.JPG'
-}, {
-    src: '/images/locations/ChiangMai/IMG_4820.JPG'
-}, {
-    src: '/images/locations/ChiangMai/IMG_4821.JPG'
-}, {
-    src: '/images/locations/ChiangMai/IMG_4822.JPG'
-}, {
-    src: '/images/locations/ChiangMai/IMG_4823.JPG'
-}, {
+},{
     src: '/images/locations/ChiangMai/IMG_4824.JPG'
 }, {
     src: '/images/locations/ChiangMai/IMG_4825.JPG'
@@ -216,4 +206,38 @@ var media_khatku = [
         src: '/images/locations/Kathu/Kathu.png'
     },
 
+];
+var media_krabi = [
+    {
+        src: '/images/locations/krabi/IMG_4858.JPG'
+    },
+    {
+        src: '/images/locations/krabi/IMG_4859.JPG'
+    },
+    {
+        src: '/images/locations/krabi/IMG_4860.JPG'
+    },
+    {
+        src: '/images/locations/krabi/IMG_4861.JPG'
+    },
+    {
+        src: '/images/locations/krabi/IMG_4862.JPG'
+    }
+];
+var media_natien = [
+    {
+        src: '/images/locations/natien/IMG_4819.JPG'
+    },
+    {
+        src: '/images/locations/natien/IMG_4820.JPG'
+    },
+    {
+        src: '/images/locations/natien/IMG_4821.JPG'
+    },
+    {
+        src: '/images/locations/natien/IMG_4822.JPG'
+    },
+    {
+        src: '/images/locations/natien/IMG_4823.JPG'
+    }
 ];

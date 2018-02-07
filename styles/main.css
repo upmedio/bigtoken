@@ -6205,6 +6205,13 @@ section > .row.full-width {
 .gold-box {
   border: #948171 2px solid;
 }
+.white-transparent-box {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.white-transparent-box .icon-card-row {
+  margin-top: 0;
+}
 /*---- Components ----*/
 .icon-card-row {
   margin-top: 50px;
@@ -7059,6 +7066,10 @@ section > .row.full-width {
   line-height: 17px;
   font-family: "Open Sans";
   text-transform: uppercase;
+}
+#findoutmore .el-section-13 {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .label_footer {
   background: #183547;

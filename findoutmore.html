@@ -26,7 +26,7 @@
   <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
-<body data-spy="scroll" data-target=".main_menu">
+<body id="findoutmore" data-spy="scroll" data-target=".main_menu">
 <div class="container">
   <header class="main-header fixed-nav">
     <div class="logo-container">
@@ -46,6 +46,7 @@
         <li><a href="/#token">Token Sale</a></li>
         <li><a href="/#whitepaper">Whitepaper</a></li>
       </ul>
+      <!--
       <div class="social">
         <ul>
           <li><a target="_blank" href="https://twitter.com/Biggroup_io "><i class="fab fa-twitter"></i></a></li>
@@ -53,6 +54,7 @@
           <li><a target="_blank" href="https://web.telegram.org/#/im?p=g273428738"><i class="fab fa-telegram-plane"></i></a></li>
         </ul>
       </div>
+      !-->
       <div class="contribute">
         <a href="/findoutmore.html">
           Find Out More
@@ -68,7 +70,7 @@
         <section class="el-section-1">
           <div class="row row_1_1">
             <div class="col-md-6">
-              <form class="form-horizontal" action="https://kyc.bigtk.io/verification" method="get">
+              <form class="form-horizontal" data-toggle="validator" action="https://kyc.bigtk.io/verification" method="get">
                 <div class="row">
                   <div class="col-md-12">
                     <p> Please fill in the below information so that we can keep you up to date on when we launch the
@@ -77,10 +79,10 @@
                         Once completed, choose whether you'd like to join our ICO participation waiting list.
                       </p>
                     <div class="form-groups">
-                      <input name="Name" class="form-control" placeholder="Name">
+                      <input name="Name" class="form-control" placeholder="Name (Required)" required>
                     </div>
                     <div class="form-groups">
-                      <input name="Email" class="form-control" type="email" placeholder="E-mail">
+                      <input name="Email" class="form-control" type="email" placeholder="E-mail (Required)" required>
                     </div>
                     <div class="form-groups">
                       <input name="phone" class="form-control" placeholder="Mobile Phone">
@@ -108,7 +110,7 @@
               </form>
 
             </div>
-            <div class="col-md-5 col-md-offset-1">
+            <div class="col-md-5 col-md-offset-1 white-transparent-box">
               <div class="icon-card-row">
                 <!-- START icon-card-column !-->
                 <div class="row card icon-card">
@@ -166,6 +168,47 @@
         </section>
       </div>
       <!-- END Section-1 !-->
+
+      <!-- BEGIN Section-13 !-->
+      <div class="el-section">
+        <section class="el-section-13">
+          <div class="row row_13_2 full-width top-footer">
+            <div class="col-md-1">
+              <a href="#" class="footer-logo">
+                <img src="images/icons/bigtokenlogo_final.png" class="img-responsive">
+              </a>
+            </div>
+            <div class="col-md-4 foot_links_block">
+              <ul class="footer-links">
+                <li><a href="#">Terms of Sale</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <!--
+            <div class="col-md-3 social_block">
+              <div class="social">
+                <ul>
+                  <li><a target="_blank" href="https://twitter.com/Biggroup_io "><i class="fab fa-twitter"></i></a></li>
+                  <li><a target="_blank" href="https://www.reddit.com/user/Bigtoken_io "><i
+                          class="fab fa-reddit-alien"></i></a></li>
+                  <li><a target="_blank" href="https://web.telegram.org/#/im?p=g273428738"><i
+                          class="fab fa-telegram-plane"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            !-->
+            <div class="col-md-4 col-md-push-3">
+              <form class="footer-subsribe">
+                <input type="email" name="Email" placeholder="E-mail"><input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+          <div class="row row_13_3 full-width label_footer">
+            <p>Copyright © 2017</p>
+          </div>
+        </section>
+      </div>
+      <!-- END Section-13 !-->
 
     </article>
   </div>

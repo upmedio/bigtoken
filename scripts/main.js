@@ -35,6 +35,17 @@ jQuery(document).ready(function ($) {
             type: 'image'
         });
     });
+    $('body').on('click', '#khatku_m', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_khatku,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+
 
     $('.tl-item').click(function () {
         $(this).toggleClass('active');

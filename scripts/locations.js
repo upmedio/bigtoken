@@ -193,3 +193,27 @@ var media_BinhDong = [
 
 
 ];
+var media_khatku = [
+    {
+        src: '/images/locations/Kathu/Kathu1.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu2.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu3.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu4.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu5.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu6.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu.png'
+    },
+
+];

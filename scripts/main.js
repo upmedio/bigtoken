@@ -45,15 +45,6 @@ jQuery(document).ready(function ($) {
             type: 'image'
         });
     });
-    $(document).click(function (e) {
-        var $tgt = $(e.target);
-        if ($tgt.closest(".text_map_area").length || $tgt.closest("#mapname").length) {
-        }
-        else {
-            $('.text_map_area').hide();
-        }
-
-    });
     $('.counter').counterUp({
         delay: 10,
         time: 1000
@@ -69,16 +60,6 @@ jQuery(document).ready(function ($) {
         $('.descriptions > div').hide();
         $('#' + data).show();
     });
-    var map = document.getElementById("mapname");
-    $('body').on('click', '#mapname', function (e) {
-        callAction(e.target);
-    });
-
-    function callAction(area) {
-        $('.text_map_area').hide();
-        $('#' + area.dataset.map).show();
-    }
-
     $("#myNavbar a").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior

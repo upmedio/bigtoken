@@ -94,7 +94,7 @@ var media_Liam = [
         src: '/images/locations/LaemDin/LaemDin.png'
     },
     {
-        src: '/images/locations/LaemDin/LaemDin2.png'
+        src: '/images/locations/LaemDin/LeamDin2.png'
     },
     {
         src: '/images/locations/LaemDin/LaemDin3.png'
@@ -191,5 +191,29 @@ var media_BinhDong = [
         src: '/images/locations/Binh/VIP16.jpg'
     }
 
+
+];
+var media_khatku = [
+    {
+        src: '/images/locations/Kathu/Kathu1.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu2.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu3.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu4.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu5.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu6.png'
+    },
+    {
+        src: '/images/locations/Kathu/Kathu.png'
+    },
 
 ];

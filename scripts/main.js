@@ -35,6 +35,21 @@ jQuery(document).ready(function ($) {
             type: 'image'
         });
     });
+    $('body').on('click', '#khatku_m', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_khatku,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+
+
+    $('.tl-item').click(function () {
+        $(this).toggleClass('active');
+    });
     $('body').on('click', '#binh_med', function (event) {
         event.preventDefault();
         $.magnificPopup.open({
@@ -45,14 +60,13 @@ jQuery(document).ready(function ($) {
             type: 'image'
         });
     });
-    $(document).click(function (e) {
-        var $tgt = $(e.target);
-        if ($tgt.closest(".text_map_area").length || $tgt.closest("#mapname").length) {
-        }
-        else {
-            $('.text_map_area').hide();
-        }
+    $('#contact_us').submit(function(event) {
+        $('#message_block').html('<p>Thank you</p>');
+        $('#message_block').show();
 
+
+        // stop the form from submitting the normal way and refreshing the page
+        event.preventDefault();
     });
     $('.counter').counterUp({
         delay: 10,
@@ -69,16 +83,6 @@ jQuery(document).ready(function ($) {
         $('.descriptions > div').hide();
         $('#' + data).show();
     });
-    var map = document.getElementById("mapname");
-    $('body').on('click', '#mapname', function (e) {
-        callAction(e.target);
-    });
-
-    function callAction(area) {
-        $('.text_map_area').hide();
-        $('#' + area.dataset.map).show();
-    }
-
     $("#myNavbar a").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior

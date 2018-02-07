@@ -6970,7 +6970,7 @@ section > .row.full-width {
   background-color: white;
   display: inline-block;
   border-radius: 100px;
-  padding: 11px 35px 11px 40px;
+  padding: 11px 20px 11px 40px;
   margin-bottom: 5px;
   position: relative;
   color: #992059;
@@ -7239,6 +7239,21 @@ section > .row.full-width {
   opacity: 0;
   transform: translate3d(0, 0, 0) translateY(50%);
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+@media (max-width: 768px) {
+  #timeline .tl-item.active:after {
+    opacity: 0;
+  }
+  #timeline .tl-item.active:before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) translateY(0);
+    transition: opacity 1s ease, transform 1s ease 0.25s;
+  }
+  #timeline .tl-item.active .tl-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.75s ease 0.5s;
+  }
 }
 @media (min-width: 768px) {
   #timeline .tl-item:hover {

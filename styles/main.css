@@ -6248,7 +6248,8 @@ section > .row.full-width {
 .person-cards .card .card-img-top {
   border-left: #992059 5px solid;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
-  max-height: 200px;
+  width: 100%;
+  height: auto;
 }
 .person-cards .card .card-text {
   display: none;
@@ -6365,7 +6366,9 @@ section > .row.full-width {
 }
 .main-header .main_menu .social {
   float: left;
-  width: 25%;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
 }
 .main-header .main_menu .social ul {
   margin-top: -9px;
@@ -6399,7 +6402,7 @@ section > .row.full-width {
   box-shadow: 0 0 1px 1px #992059;
 }
 .main-header .main_menu .menu {
-  width: 60%;
+  width: 65%;
   padding: 0;
   float: left;
 }
@@ -6453,7 +6456,7 @@ section > .row.full-width {
 .main-header .main_menu .menu li:last-child {
   margin-right: 0;
 }
-@media (min-width: 768px) and (max-width: 930px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .main-header .main_menu .menu li a {
     font-size: 14px;
   }
@@ -6510,7 +6513,7 @@ section > .row.full-width {
 .el-section-1 p {
   font-family: "HKGrotesk", Helvetica, sans-serif;
   font-size: 1.5em;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
 }
 .el-section-1 p.subtitle {
@@ -6630,9 +6633,11 @@ section > .row.full-width {
 .el-section-5 .overlap-box {
   padding-right: 5%;
 }
-.el-section-5 .overlap-left {
-  width: 55%;
-  margin-left: -5%;
+@media (min-width: 768px) {
+  .el-section-5 .overlap-left {
+    width: 55%;
+    margin-left: -5%;
+  }
 }
 .el-section-5 #video-link {
   margin-top: 5%;

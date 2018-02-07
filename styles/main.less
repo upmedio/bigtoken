@@ -193,7 +193,8 @@ section > .row {
       border-left: @maroon 5px solid;
       .box-shadow(0px, 1px, 6px, rgba(0, 0, 0, 0.2));
 
-      max-height: 200px;
+      width: 100%;
+      height: auto;
     }
     .card-text {
 
@@ -318,7 +319,9 @@ section > .row {
 
     .social {
       float: left;
-      width: 25%;
+      width: 20%;
+      text-align: right;
+      padding-right: 10px;
 
       ul {
         margin-top: -9px;
@@ -351,7 +354,7 @@ section > .row {
     }
 
     .menu {
-      width: 60%;
+      width: 65%;
       padding: 0;
       float: left;
       @media (max-width: 1200px) {
@@ -402,7 +405,7 @@ section > .row {
         margin-right: 0;
       }
     }
-    @media (min-width: 768px) and (max-width: 930px) {
+    @media (min-width: 768px) and (max-width: 1200px) {
       .menu {
         li {
           a {
@@ -468,7 +471,7 @@ section > .row {
     margin-top: 50px;
   }
   p {
-    .font(@font-family-hk-grotesk, 1.5em, 200, normal);
+    .font(@font-family-hk-grotesk, 1.5em, 400, normal);
 
     &.subtitle {
       color: @someblue;
@@ -585,9 +588,12 @@ section > .row {
   .overlap-box {
     padding-right: 5%;
   }
-  .overlap-left {
-    width: 55%;
-    margin-left: -5%;
+  @media (min-width: 768px) {
+    .overlap-left {
+      width: 55%;
+      margin-left: -5%;
+    }
+
   }
 
   #video-link {

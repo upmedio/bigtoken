@@ -7404,7 +7404,7 @@ section > .row.full-width {
 }
 .what__video-container {
   width: 80%;
-  margin: 10rem 0;
+  margin: 5% 0 0;
 }
 @media (min-width: 767px) {
   .what__video-container {
@@ -7546,4 +7546,19 @@ section > .row.full-width {
   -ms-flex-pack: end;
   justify-content: flex-end;
   right: -12%;
+}
+.el-section-video {
+  padding: 30px 0 50px !important;
+}
+.el-section-video h3 {
+  color: #183547;
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+}
+@media (max-width: 468px) {
+  .el-section-video h3 {
+    font-size: 30px;
+  }
 }

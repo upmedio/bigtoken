@@ -6972,7 +6972,7 @@ section > .row.full-width {
   }
 }
 .person-cards .card .card-text p {
-  line-height: 15px;
+  line-height: 13px;
   font-size: 10px;
   color: white;
   font-weight: 400;
@@ -7784,7 +7784,7 @@ section > .row.full-width {
 .el-section-13 {
   padding: 1% 0 0% !important;
   background-color: #F9FAFE;
-  background-image: url("../images/bg/buttom.png");
+  background-image: url("../images/bg/buttom.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -7843,7 +7843,6 @@ section > .row.full-width {
   color: white;
   font-size: 12px;
   line-height: 17px;
-  font-family: "Open Sans";
   text-transform: uppercase;
 }
 #findoutmore .el-section-13 {

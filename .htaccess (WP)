@@ -1,0 +1,25 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# ALLOW USER BY IP
+<Limit GET POST>
+ Require all denied
+ Require ip 116.12.162.100
+ Require ip 116.87.97.164
+# Junice Liew
+# Require ip 183.90.36.65
+ Require ip 101.127.169.202
+# Raphael Tant - ICO Consulting Asia
+ Require ip 58.8.155.222
+# Thailand Vendor - Ami
+ Require ip 61.91.179.102
+</Limit>

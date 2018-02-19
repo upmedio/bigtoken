@@ -11,10 +11,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>The BIG Token - A cryptocurrency uniquely backed by real estate</title>
   <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+  
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
@@ -30,7 +36,7 @@
 <div class="container">
   <header class="main-header fixed-nav">
     <div class="logo-container">
-      <a href="/"><img src="images/icons/bigtokenlogo_final.png" alt="#" id="logo" data-height-percentage="100"></a>
+      <a href='javascript:;' onclick="navigateHome()"><img src="images/icons/bigtokenlogo_final.png" alt="#" id="logo" data-height-percentage="100"></a>
     </div>
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
       <span class="icon-bar"></span>
@@ -39,12 +45,12 @@
     </button>
     <div class="main_menu collapse navbar-collapse" id="myNavbar">
       <ul class="nav menu navbar-nav collapses">
-        <li><a href="/#problems">Problem</a></li>
-        <li><a href="/#solutions">Solution</a></li>
-        <li><a href="/#realestate">The Real Estate</a></li>
-        <li><a href="/#team">Team</a></li>
-        <li><a href="/#token">Token Sale</a></li>
-        <li><a href="/#whitepaper">Whitepaper</a></li>
+        <li><a href='javascript:;' onclick="navigateDynamic('#problems')">Problem</a></li>
+        <li><a href='javascript:;' onclick="navigateDynamic('#solutions')">Solution</a></li>
+        <li><a href='javascript:;' onclick="navigateDynamic('#realestate')">The Real Estate</a></li>
+        <li><a href='javascript:;' onclick="navigateDynamic('#team')">Team</a></li>
+        <li><a href='javascript:;' onclick="navigateDynamic('#token')">Token Sale</a></li>
+        <li><a href='javascript:;' onclick="navigateDynamic('#whitepaper')">Whitepaper</a></li>
       </ul>
       <!--
       <div class="social">
@@ -56,7 +62,7 @@
       </div>
       !-->
       <div class="contribute">
-        <a href="/findoutmore.html">
+        <a href='javascript:;' onclick="navigateFindoutmore()">
           Find Out More
         </a>
       </div>
@@ -76,37 +82,46 @@
                     <p> Please fill in the below information so that we can keep you up to date on when we launch the
                       ICO! </p>
                       <p>
-                        Once completed, choose whether you'd like to join our ICO participation waiting list.
+                        Complete the KYC form and join the ICO
                       </p>
                     <div class="form-groups">
-                      <input name="Name" class="form-control" placeholder="Name (Required)" required>
+                      <input id="Name" name="Name" class="form-control" placeholder="Name (Required)" required>
                     </div>
                     <div class="form-groups">
-                      <input name="Email" class="form-control" type="email" placeholder="E-mail (Required)" required>
+                      <input id="Email" name="Email" class="form-control" type="email" placeholder="E-mail (Required)" required>
                     </div>
                     <div class="form-groups">
-                      <input name="phone" class="form-control" placeholder="Mobile Phone">
+                      <input id="phone" name="phone" class="form-control" placeholder="Mobile Phone">
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6 col-sm-6">
-                    <button type="submit" class="btn" value="yes">
-                      Join Waiting List
+                    <button type="button" id="join" class="btn">
+                      Start KYC
                     </button>
                   </div>
                   <div class="col-md-6 col-sm-6">
-                    <button id="send_later" class="btn" value="no">
+                    <button type="button" id="update" class="btn">
                       Sign up for updates
                     </button>
                   </div>
                   <div class="col-md-12">
                     <div class="form-message animated fadeIn">
-                      <p>Thank you and we will be in touch soon with BIG token updates!
+                      <p>Thank you for your interest in BIG tokens. We will keep you updated when the ICO goes live.
                       </p>
                     </div>
                   </div>
                 </div>
+
+                <div style="display: none;" class="alert alert-success alert-dismissable">
+                    Thank you for Signing up with us!
+                </div>
+
+                <div style="display: none;" class="warningalert alert-danger alert-dismissable">
+                    Name & Email are mandatory!
+                </div>
+
               </form>
 
             </div>
@@ -178,33 +193,29 @@
                 <img src="images/icons/bigtokenlogo_final.png" class="img-responsive">
               </a>
             </div>
-            <div class="col-md-4 foot_links_block">
-              <ul class="footer-links">
-                <li><a href="#">Terms of Sale</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
+            <div class="col-md-7 foot_links_block">
             </div>
-            <!--
-            <div class="col-md-3 social_block">
-              <div class="social">
-                <ul>
-                  <li><a target="_blank" href="https://twitter.com/Biggroup_io "><i class="fab fa-twitter"></i></a></li>
-                  <li><a target="_blank" href="https://www.reddit.com/user/Bigtoken_io "><i
-                          class="fab fa-reddit-alien"></i></a></li>
-                  <li><a target="_blank" href="https://web.telegram.org/#/im?p=g273428738"><i
-                          class="fab fa-telegram-plane"></i></a></li>
-                </ul>
+            <div class="col-md-4">
+              <div id="mc_embed_signup">
+                <form action="https://bigtk.us17.list-manage.com/subscribe/post?u=46d3db1c69ca3aa906c5266ff&amp;id=c828d495e9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate footer-subsribe" target="_blank">
+                    <div id="mc_embed_signup_scroll">
+                      <div class="mc-field-group">
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                      </div>
+                      <div id="mce-responses" class="clear">
+                          <div class="response" id="mce-error-response" style="display:none"></div>
+                          <div class="response" id="mce-success-response" style="display:none"></div>
+                      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_46d3db1c69ca3aa906c5266ff_c828d495e9" tabindex="-1" value=""></div>
+                    <div class="clear"></div>
+                    </div>
+                </form>
               </div>
-            </div>
-            !-->
-            <div class="col-md-4 col-md-push-3">
-              <form class="footer-subsribe">
-                <input type="email" name="Email" placeholder="E-mail"><input type="submit" value="Subscribe">
-              </form>
             </div>
           </div>
           <div class="row row_13_3 full-width label_footer">
-            <p>Copyright © 2017</p>
+            <p>Copyright © 2018</p>
           </div>
         </section>
       </div>
@@ -246,9 +257,12 @@
 <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
 
 <!-- build:js scripts/counterup.min.js -->
+<script src="bower_components/counter-up/jquery.counterup.min.js"></script>
 
 <script src="scripts/main.js"></script>
 <script src="scripts/hello.js"></script>
+<script src="scripts/form.js"></script>
+<script src="scripts/navigate.js"></script>
 <!-- endbuild -->
 
 <!-- build:js scripts/vendor/bootstrap.js -->

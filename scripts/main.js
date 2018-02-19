@@ -1,5 +1,28 @@
 jQuery(document).ready(function ($) {
 
+    $(".what__video-container").slick({
+        centerMode: !0,
+        centerPadding: "25rem",
+        slidesToShow: 1,
+        nextArrow: '<div class="slick-arrow slick-arrow-next"></div>',
+        prevArrow: '<div class="slick-arrow slick-arrow-prev"></div>',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                centerMode: !1,
+                swipe: !0,
+                nextArrow: '<div class="slick-arrow-icon slick-arrow-icon-next"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/></div>',
+                prevArrow: '<div class="slick-arrow-icon slick-arrow-icon-prev"> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/></div>'
+            }
+        }]
+    }).on('afterChange',function(e,o){
+        console.log('slide change');
+        //on change slide = do action
+        $('iframe').each(function(){
+            console.log('stop iframe');
+            $(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+        });
+    });
 
     $('body').on('click', '#ChiangMai_med', function (event) {
         event.preventDefault();
@@ -46,9 +69,34 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    $('body').on('click', '#natien_m', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_natien,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+    $('body').on('click', '#krabi_m', function (event) {
+        event.preventDefault();
+        $.magnificPopup.open({
+            items: media_krabi,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+
+
 
     $('.tl-item').click(function () {
-        $(this).toggleClass('active');
+        if ($(window).width() < 768) {
+            $('.tl-item').removeClass('active');
+            $(this).addClass('active');
+        }
     });
     $('body').on('click', '#binh_med', function (event) {
         event.preventDefault();
@@ -61,6 +109,9 @@ jQuery(document).ready(function ($) {
         });
     });
     $('#contact_us').submit(function(event) {
+
+        var data = $(this).serializeArray();
+
         $('#message_block').html('<p>Thank you</p>');
         $('#message_block').show();
 
@@ -116,3 +167,11 @@ jQuery(document).ready(function ($) {
         }
     });
 });
+
+function init() {
+    var vidDefer = document.getElementsByTagName('iframe');
+    for (var i=0; i<vidDefer.length; i++) {
+        if(vidDefer[i].getAttribute('data-src')) {
+            vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+        } } }
+window.onload = init;

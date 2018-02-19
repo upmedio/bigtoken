@@ -61,7 +61,7 @@ h1,h2,h3,h4,h5{
 h1{
   .font(@font-family-hk-grotesk, 6em, bold, normal);
   @media (max-width:768px){
-    .font(@font-family-hk-grotesk, 5em, bold, normal);
+    .font(@font-family-hk-grotesk, 3.9em, bold, normal);
   }
   &.main-title{
     color: @white;
@@ -106,7 +106,12 @@ h5{
 }
 p{
   font-size: @font-normal;
-  line-height: 30px;
+  line-height: 1.2em;
   color: #000;
   font-family: @font-family-helvertica;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 1.7em;
+  }
 }

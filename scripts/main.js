@@ -1,5 +1,9 @@
 jQuery(document).ready(function ($) {
 
+    $('#getting-started').countdown('2018/02/27', function(event) {
+      $(this).html(event.strftime('<div class="number-wrapper"><div class="number">%n</div><div class="unit">Days</div></div><span>:</span><div class="number-wrapper"><div class="number">%H</div><div class="unit">Hours</div></div><span>:</span><div class="number-wrapper"><div class="number">%M</div><div class="unit">Minutes</div></div><span>:</span><div class="number-wrapper"><div class="number">%S</div><div class="unit">Seconds</div></div>'));
+    });
+
     $(".what__video-container").slick({
         centerMode: !0,
         centerPadding: "25rem",

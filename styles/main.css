@@ -7239,7 +7239,7 @@ section > .row.full-width {
 }
 @media (min-width: 991px) {
   .el-section-1 .main-title {
-    margin-top: 150px;
+    margin-top: 80px;
   }
 }
 .el-section-1 form {
@@ -8416,5 +8416,40 @@ section > .row.full-width {
   background-position: -351px -135px;
   width: 39px;
   height: 36px;
+}
+/*---- Number Counter ----*/
+.countdown {
+  margin-top: 20px;
+  padding: 20px 30px;
+  border: #183547 1px solid;
+  text-align: center;
+}
+.countdown h4 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+#getting-started > * {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+}
+#getting-started span {
+  color: #ffffff;
+  font-size: 28px;
+}
+#getting-started .number-wrapper {
+  text-align: center;
+}
+#getting-started .number-wrapper .number {
+  color: #ffffff;
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+#getting-started .number-wrapper .unit {
+  color: #183547;
+  font-size: 12px;
 }
 /*# sourceMappingURL=/styles/main.css.map */

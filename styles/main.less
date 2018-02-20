@@ -497,7 +497,7 @@ section > .row {
   }
   @media (min-width: 991px) {
     .main-title {
-      margin-top: 150px;
+      margin-top: 80px;
     }
   }
   form {
@@ -1644,3 +1644,38 @@ section > .row {
 .logos_a-49 { background-position: -306px -23px; width: 53px; height: 34px; }
 .logos_big { background-position: -351px -98px; width: 43px; height: 32px; }
 .logos_brownstone { background-position: -351px -135px; width: 39px; height: 36px; }
+
+/*---- Number Counter ----*/
+.countdown{
+  margin-top: 20px;
+  padding: 20px 30px;
+  border: #183547 1px solid;
+  text-align: center;
+  h4{
+    .font(@font-family-hk-grotesk, @font-medium, 200, normal);
+    margin-bottom: 20px;
+  }
+}
+#getting-started{
+  > *{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+  }
+  span{
+    color: @white;
+    font-size: 28px;
+  }
+  .number-wrapper{
+    text-align: center;
+    .number{
+      color: @white;
+      font-size: 32px;
+      padding-bottom: 10px;
+    }
+    .unit{
+      color: @someblue;
+      font-size: @font-small;
+    }
+  }
+}

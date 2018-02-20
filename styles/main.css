@@ -8419,15 +8419,20 @@ section > .row.full-width {
 }
 /*---- Number Counter ----*/
 .countdown {
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 20px 30px;
   border: #183547 1px solid;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .countdown {
+    padding: 20px 10px;
+  }
+}
 .countdown h4 {
   font-family: "HKGrotesk", Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 36px;
+  font-weight: 600;
   font-style: normal;
   margin-bottom: 20px;
 }
@@ -8435,6 +8440,11 @@ section > .row.full-width {
   display: inline-block;
   vertical-align: top;
   margin: 0 10px;
+}
+@media (max-width: 768px) {
+  #getting-started > * {
+    margin: 3px;
+  }
 }
 #getting-started span {
   color: #ffffff;
@@ -8450,6 +8460,6 @@ section > .row.full-width {
 }
 #getting-started .number-wrapper .unit {
   color: #183547;
-  font-size: 12px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=/styles/main.css.map */

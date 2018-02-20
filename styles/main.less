@@ -1647,12 +1647,16 @@ section > .row {
 
 /*---- Number Counter ----*/
 .countdown{
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 20px 30px;
   border: #183547 1px solid;
   text-align: center;
+
+  @media (max-width: 768px){
+    padding: 20px 10px;
+  }
   h4{
-    .font(@font-family-hk-grotesk, @font-medium, 200, normal);
+    .font(@font-family-hk-grotesk, 36px, 600, normal);
     margin-bottom: 20px;
   }
 }
@@ -1661,6 +1665,10 @@ section > .row {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px;
+
+    @media (max-width: 768px){
+      margin: 3px;
+    }
   }
   span{
     color: @white;
@@ -1675,7 +1683,7 @@ section > .row {
     }
     .unit{
       color: @someblue;
-      font-size: @font-small;
+      font-size: 14px;
     }
   }
 }

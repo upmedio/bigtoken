@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
 
-    $('#getting-started').countdown('2018/02/27', function(event) {
+    $('#getting-started').countdown('2018/02/27 7:00:00', function(event) {
+    //$('#getting-started').countdown('2018/02/27 07:00:00', function(event) {
       $(this).html(event.strftime('<div class="number-wrapper"><div class="number">%n</div><div class="unit">Days</div></div><span>:</span><div class="number-wrapper"><div class="number">%H</div><div class="unit">Hours</div></div><span>:</span><div class="number-wrapper"><div class="number">%M</div><div class="unit">Minutes</div></div><span>:</span><div class="number-wrapper"><div class="number">%S</div><div class="unit">Seconds</div></div>'));
     });
 
@@ -123,10 +124,14 @@ jQuery(document).ready(function ($) {
         // stop the form from submitting the normal way and refreshing the page
         event.preventDefault();
     });
+
+    /*
     $('.counter').counterUp({
         delay: 10,
         time: 1000
     });
+    */
+
     if ($(window).scrollTop() === 0) {
         $(".main-header").removeClass('scrolling');
     }
@@ -139,6 +144,9 @@ jQuery(document).ready(function ($) {
         $('#' + data).show();
     });
     $("#myNavbar a").on('click', function (event) {
+
+      $('.btn-navbar').click(); //bootstrap 2.x
+      $('.navbar-toggle').click() //bootstrap 3.x by Richard
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {

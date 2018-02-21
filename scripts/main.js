@@ -33,7 +33,7 @@ jQuery(document).ready(function ($) {
         animated: 'fade',
         //placement: 'bottom',
         trigger: 'click'
-    }).on('click touchstart', function(){
+    }).on('touchstart', function(){
       $(this).toggleClass('active');
     })
 

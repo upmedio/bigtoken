@@ -142,6 +142,8 @@ jQuery(document).ready(function ($) {
     		success: function(data) {
     			$contactForm.find('.alert-loading').hide();
     			$contactForm.append('<div class="alert alert-success">Message sent!</div>');
+
+          clear_form_elements($contactForm);
     		},
     		error: function(err) {
     			$contactForm.find('.alert-loading').hide();
@@ -204,6 +206,26 @@ jQuery(document).ready(function ($) {
         }
     });
 });
+
+function clear_form_elements(ele) {
+
+    $(ele).find(':input').each(function() {
+        switch(this.type) {
+            case 'email':
+            case 'password':
+            case 'select-multiple':
+            case 'select-one':
+            case 'text':
+            case 'textarea':
+                $(this).val('');
+                break;
+            case 'checkbox':
+            case 'radio':
+                this.checked = false;
+        }
+    });
+
+}
 
 function init() {
     var vidDefer = document.getElementsByTagName('iframe');

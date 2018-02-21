@@ -88,7 +88,7 @@
                       <input id="Name" name="Name" class="form-control" placeholder="Name (Required)" required>
                     </div>
                     <div class="form-groups">
-                      <input id="Email" name="Email" class="form-control" type="email" placeholder="E-mail (Required)" required>
+                      <input id="Email" name="Email" class="form-control" type="email" placeholder="E-mail (Required)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required>
                     </div>
                     <div class="form-groups">
                       <input id="phone" name="phone" class="form-control" placeholder="Mobile Phone">
@@ -119,7 +119,7 @@
                 </div>
 
                 <div style="display: none;" class="warningalert alert-danger alert-dismissable">
-                    Name & Email are mandatory!
+                    Your name or email are invalid. Please try again.
                 </div>
 
               </form>

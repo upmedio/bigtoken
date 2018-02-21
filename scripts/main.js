@@ -132,20 +132,20 @@ jQuery(document).ready(function ($) {
     $contactForm.submit(function(e) {
     	e.preventDefault();
     	$.ajax({
-    		url: '//formspree.io/nuttapol@upmedio.com',
+    		url: '//formspree.io/admin@upmedio.com',
     		method: 'POST',
     		data: $(this).serialize(),
     		dataType: 'json',
     		beforeSend: function() {
-    			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+    			$contactForm.append('<div class="alert alert-loading">Sending message…</div>');
     		},
     		success: function(data) {
-    			$contactForm.find('.alert--loading').hide();
-    			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+    			$contactForm.find('.alert-loading').hide();
+    			$contactForm.append('<div class="alert alert-success">Message sent!</div>');
     		},
     		error: function(err) {
-    			$contactForm.find('.alert--loading').hide();
-    			$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+    			$contactForm.find('.alert-loading').hide();
+    			$contactForm.append('<div class="alert alert-danger">Ops, there was an error.</div>');
     		}
     	});
     });

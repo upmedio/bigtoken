@@ -29,6 +29,14 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    $('a[data-toggle="tooltip"]').tooltip({
+        animated: 'fade',
+        //placement: 'bottom',
+        trigger: 'click'
+    }).on('click touchstart', function(){
+      $(this).toggleClass('active');
+    })
+
     $('body').on('click', '#ChiangMai_med', function (event) {
         event.preventDefault();
         $.magnificPopup.open({

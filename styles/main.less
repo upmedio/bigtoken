@@ -16,6 +16,7 @@
 @darkgold: #53534A;
 @gold: #948171;
 @gulfstream: #4D697B;
+@green: #219967;
 @lightgrey: #E8EDF1;
 @maroon: #992059;
 @forgedsteel: #B5C8D0;
@@ -41,6 +42,20 @@
 
 .box-shadow( @x-length, @y-length, @blur-radius, @color ) {
   box-shadow: @x-length @y-length @blur-radius @color;
+}
+
+.rotate( @degree ){
+  -webkit-transform: rotate(@degree); /* Safari and Chrome */
+  -moz-transform: rotate(@degree);   /* Firefox */
+  -ms-transform: rotate(@degree);   /* IE 9 */
+  -o-transform: rotate(@degree);   /* Opera */
+  transform: rotate(@degree);
+}
+.transition( @duration, @easing){
+  -webkit-transition: @duration @easing;
+   -moz-transition: @duration @easing;
+   -o-transition: @duration @easing;
+   transition: @duration @easing;
 }
 
 /*---- LESS Styles ----*/
@@ -326,6 +341,53 @@ section > .row {
     }
 
   }
+}
+
+.tooltip-inner{
+  padding: 15px;
+  text-align: left;
+  font-size: @font-smaller;
+  background: #152F3F;
+}
+.tooltip.right .tooltip-arrow{
+  border-right-color: #152F3F;
+}
+.tooltip-wrapper{
+  position: relative;
+
+  img{
+    width: 100%;
+  }
+}
+.tooltip-marker {
+  padding: 1px 7px;
+  border-radius: 100%;
+  background-color: @green;
+  color: @white;
+  font-size: @font-smaller;
+  .transition( 0.1s, linear );
+
+  &:hover{
+    color: @white;
+  }
+  &.active{
+    .rotate( 45deg );
+  }
+}
+#marker_1{
+  position: absolute;
+  left: 7%;
+  top: 12%;
+}
+#marker_2{
+  position: absolute;
+  right: 15%;
+  top: 65%;
+}
+#marker_3{
+  position: absolute;
+  left: 47%;
+  bottom: 19%;
 }
 
 /*---- Header ----*/
@@ -702,7 +764,10 @@ section > .row {
         font-size: 20px;
         font-weight: 600;
         line-height: 18px;
-        background-color: #DDD;
+
+        @media (max-width: 768px) {
+          background-color: #DDD;
+        }
 
         i {
 

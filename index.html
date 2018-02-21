@@ -1552,7 +1552,7 @@
               </div>
               <div class="row ">
                 <div class="col-md-8 col-md-offset-2">
-                  <form class="form-labeled" id="contact_us">
+                  <form id="contact_us" class="form-labeled" action="//formspree.io/admin@upmedio.com" method="post">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group gray-group">
@@ -1579,6 +1579,9 @@
                         </div>
                       </div>
                       <div class="col-md-12 text-right">
+                        <!-- CONFIG -->
+                      	<input type="hidden" name="_subject" value="Contact from BIG Token">
+                      	<input type="hidden" name="_cc" value="nuttapol@upmedio.com">
                         <input type="submit" value="Send">
                       </div>
                       <div class="col-md-12 text-center" id="message_block">

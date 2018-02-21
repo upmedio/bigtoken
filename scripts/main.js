@@ -113,16 +113,41 @@ jQuery(document).ready(function ($) {
             type: 'image'
         });
     });
+
+    /*
     $('#contact_us').submit(function(event) {
 
         var data = $(this).serializeArray();
 
-        $('#message_block').html('<p>Thank you</p>');
-        $('#message_block').show();
+        //$('#message_block').html('<p>Thank you</p>');
+        //$('#message_block').show();
 
 
         // stop the form from submitting the normal way and refreshing the page
-        event.preventDefault();
+        //event.preventDefault();
+    });
+    */
+
+    var $contactForm = $('#contact_us');
+    $contactForm.submit(function(e) {
+    	e.preventDefault();
+    	$.ajax({
+    		url: '//formspree.io/admin@upmedio.com',
+    		method: 'POST',
+    		data: $(this).serialize(),
+    		dataType: 'json',
+    		beforeSend: function() {
+    			$contactForm.append('<div class="alert alert-loading">Sending message…</div>');
+    		},
+    		success: function(data) {
+    			$contactForm.find('.alert-loading').hide();
+    			$contactForm.append('<div class="alert alert-success">Message sent!</div>');
+    		},
+    		error: function(err) {
+    			$contactForm.find('.alert-loading').hide();
+    			$contactForm.append('<div class="alert alert-danger">Ops, there was an error.</div>');
+    		}
+    	});
     });
 
     /*

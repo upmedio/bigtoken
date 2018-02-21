@@ -6862,6 +6862,10 @@ section > .row.full-width {
     margin-bottom: 20px;
   }
 }
+.alert-loading {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
 /*---- Common ----*/
 .gold {
   color: #948171;

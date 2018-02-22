@@ -6114,6 +6114,43 @@ p {
     line-height: 1.7em;
   }
 }
+section > .row.process-diagram-row {
+  width: 80%;
+  margin-top: 4%;
+}
+.process-diagram li {
+  width: 20%;
+  list-style: none;
+  text-align: center;
+}
+.process-diagram li p {
+  font-size: 14px;
+}
+.numberCircle {
+  position: relative;
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+  /* remove if you don't care about IE8 */
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 10px;
+  padding: 20px;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  font-size: 26px;
+}
+.numberCircle:before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  margin: 2px 0 0 2px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  top: 0;
+  left: 0;
+}
 @charset "UTF-8";
 
 /*!
@@ -6818,6 +6855,7 @@ img.mfp-img {
 body {
   line-height: 1.5em;
   color: #53534a;
+  -webkit-font-smoothing: antialiased;
 }
 .container {
   width: 100%;
@@ -6891,6 +6929,11 @@ section > .row.full-width {
 }
 .marginB5 {
   margin-bottom: 5px;
+}
+/**--- Event ---*/
+.before-launch,
+.after-launch {
+  display: none;
 }
 /*---- Number ----*/
 .bignumber {
@@ -7193,6 +7236,7 @@ section > .row.full-width {
   border-radius: 25px;
   padding: 12px 30px;
   font-size: 14px;
+  text-align: center;
   white-space: nowrap;
   transition: 0.3s linear;
 }
@@ -7758,9 +7802,9 @@ section > .row.full-width {
   }
 }
 .ico-progress-viewer {
-  display: none !important;
+  display: block;
   margin-top: 30px;
-  border: 2px solid #948171;
+  border: 1px solid #183547;
   padding: 9%;
 }
 .ico-progress-viewer .progress-bar-outer {
@@ -7773,7 +7817,7 @@ section > .row.full-width {
 .ico-progress-viewer .countdown {
   color: #183547;
   font-family: Helvetica, sans-serif;
-  font-size: 48.4px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 59px;
   text-align: center;
@@ -7786,6 +7830,7 @@ section > .row.full-width {
   }
 }
 .ico-progress-viewer .countdown :nth-child(2n) {
+  font-size: 32px;
   line-height: 57px;
   color: #992058;
 }

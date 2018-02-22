@@ -1,0 +1,40 @@
+section > .row.process-diagram-row{
+  width: 80%;
+  margin-top: 4%;
+}
+.process-diagram{
+  li{
+    width: 20%;
+    list-style: none;
+    text-align: center;
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
+.numberCircle {
+    position: relative;
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 10px;
+    padding: 20px;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+    font-size: 26px;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      margin: 2px 0 0 2px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      top: 0;
+      left: 0;
+    }
+}

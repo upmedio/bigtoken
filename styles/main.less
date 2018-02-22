@@ -6,6 +6,7 @@
 //@fa-font-path: "../fonts/font-awesome";
 
 @import "font.less";
+@import "circle-number.less";
 @import (inline) 'animate.min.css';
 @import (inline) 'magnific-popup.css';
 @import (inline) 'slick.css';
@@ -74,6 +75,7 @@
 body {
   line-height: 1.5em;
   color: @darkgold;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -152,6 +154,11 @@ section > .row {
 
 .marginB5 {
   margin-bottom: 5px;
+}
+
+/**--- Event ---*/
+.before-launch, .after-launch{
+  display: none;
 }
 
 /*---- Number ----*/
@@ -453,6 +460,7 @@ section > .row {
         border-radius: 25px;
         padding: 12px 30px;
         font-size: 14px;
+        text-align: center;
         white-space: nowrap;
         transition: 0.3s linear;
         &:hover {
@@ -997,9 +1005,9 @@ section > .row {
 }
 
 .ico-progress-viewer {
-  display: none !important;
+  display: block;
   margin-top: 30px;
-  border: 2px solid @gold;
+  border: 1px solid #183547;
   padding: 9%;
 
   .progress-bar-outer {
@@ -1012,7 +1020,7 @@ section > .row {
   .countdown {
     color: @someblue;
     font-family: @font-family-helvertica;
-    font-size: 48.4px;
+    font-size: 40px;
     @media (max-width: 768px) {
       font-size: 30px;
     }
@@ -1022,6 +1030,7 @@ section > .row {
     display: flex;
     justify-content: space-between;
     :nth-child(2n) {
+      font-size: 32px;
       line-height: 57px;
       color: #992058;
     }

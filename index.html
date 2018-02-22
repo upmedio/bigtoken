@@ -60,8 +60,11 @@
         </ul>
       </div>
       <div class="contribute">
-        <a href='javascript:;' onclick="navigateFindoutmore()">
+        <a class="before-launch" href='javascript:;' onclick="navigateFindoutmore()">
           Find Out More
+        </a>
+        <a class="after-launch" href='join-ico.html'>
+          Join ICO
         </a>
       </div>
     </div>
@@ -77,62 +80,64 @@
               <h1 class="main-title">BIG TOKEN</h1>
               <p class="subtitle">Cryptocurrency with a guaranteed buyback of tokens. Uniquely backed by real estate</p>
 
-              <div class="countdown">
+              <div class="countdown before-launch">
                 <h4>ICO launches in</h4>
                 <div id="getting-started"></div>
               </div>
 
               <div class="row">
                 <div class="col-md-6 col-md-push-3 text-center visible-xs">
-                  <a class="btn btn-purple" href='javascript:;' onclick="navigateFindoutmore()">Find Out More</a>
+                  <a class="btn btn-purple before-launch" href='javascript:;' onclick="navigateFindoutmore()">Find Out More</a>
+                  <a class="btn btn-purple after-launch" href='join-ico.html'>Join ICO</a>
                 </div>
               </div>
-              <div class="ico-progress-viewer" style="display: none">
+              <div class="after-launch">
+                <div class="ico-progress-viewer">
 
-                <!-- Loading mode -->
-                <div class="hide mode mode-loading">
-                  <i>Loading...</i>
-                </div>
-
-                <!-- BEFORE CROWDSALE -->
-                <div class="mode mode-pre-sale">
-                  The ICO will begin <span class="date start-date"></span>
-                  <div class="countdown"></div>
-                </div>
-                <div class="mode-on-sale hide">
-                  <span class="hide date start-date"></span>
-                  <span class="hide date end-date"></span>
-                </div>
-                <!-- DURING CROWDSALE -->
-                <div class="mode mode-on-sale">
-                  <h2 class="hide">Smart contract address: <a class="contract-address" href="#"></a></h2>
-                  <div class="row">
-                    <div class="progress-bar-outer col-md-8" data-progress-value="0 ETH">
-                        <span class="progress-out-value">
-                        </span>
-                      <span>BIG tokens sold
-                        </span>
-                    </div>
-                    <div class="progress-bar-outer col-md-4 text-right">
-                      <small class="max-cap"></small>
-                      <strong class="min-cap hide"></strong>
-                    </div>
-                  </div>
-                  <div class="progress">
-                    <div class="progress-value"></div>
+                  <!-- Loading mode -->
+                  <div class="hide mode mode-loading">
+                    <i>Loading...</i>
                   </div>
 
-                  <div class="countdown"></div>
+                  <!-- BEFORE CROWDSALE -->
+                  <div class="mode mode-pre-sale">
+                    The ICO will begin <span class="date start-date"></span>
+                    <div class="countdown"></div>
+                  </div>
+                  <div class="mode-on-sale hide">
+                    <span class="hide date start-date"></span>
+                    <span class="hide date end-date"></span>
+                  </div>
+                  <!-- DURING CROWDSALE -->
+                  <div class="mode mode-on-sale">
+                    <h2 class="hide">Smart contract address: <a class="contract-address" href="#"></a></h2>
+                    <div class="row">
+                      <div class="progress-bar-outer col-md-8" data-progress-value="0 ETH">
+                          <span class="progress-out-value">
+                          </span>
+                        <span>BIG tokens sold
+                          </span>
+                      </div>
+                      <div class="progress-bar-outer col-md-4 text-right">
+                        <small class="max-cap"></small>
+                        <strong class="min-cap hide"></strong>
+                      </div>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-value"></div>
+                    </div>
+
+                    <div class="countdown"></div>
+
+                  </div>
+
+                  <!-- AFTER CROWDSALE -->
+                  <div class="hide mode mode-post-sale">
+                    The ICO has ended. The total raised was <span class="total-raised-amount">0</span> ETH
+                  </div>
 
                 </div>
-
-                <!-- AFTER CROWDSALE -->
-                <div class="hide mode mode-post-sale">
-                  The ICO has ended. The total raised was <span class="total-raised-amount">0</span> ETH
-                </div>
-
               </div>
-
             </div>
             <div class="col-md-5 col-md-offset-1 white-transparent-box">
               <div class="icon-card-row">
@@ -190,7 +195,8 @@
               </div>
               <div class="row">
                 <div class="col-md-6 col-md-push-3 text-center hidden-xs">
-                  <a class="btn btn-purple" href='javascript:;' onclick="navigateFindoutmore()">Find Out More</a>
+                  <a class="btn btn-purple before-launch" href='javascript:;' onclick="navigateFindoutmore()">Find Out More</a>
+                  <a class="btn btn-purple after-launch" href='join-ico.html'>Join ICO</a>
                 </div>
               </div>
             </div>
@@ -1684,14 +1690,15 @@
 <script src="scripts/navigate.js"></script>
 <!-- endbuild -->
 
+<script src="scripts/counter-logic.js"></script>
+
 <!-- build:js scripts/vendor/bootstrap.js -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- endbuild -->
 
-<!--
 <script type="text/javascript" charset="utf-8" async="" src="js/web3.1.0.0-beta.29.min.js"></script>
 <script type="text/javascript" charset="utf-8" async="" src="js/moment.min.js"></script>
 <script type="text/javascript" charset="utf-8" async="" src="js/bignumber.min.js"></script>
-<script type="text/javascript" charset="utf-8" async="" src="js/ico-progress-viewer-public.js"></script>-->
+<script type="text/javascript" charset="utf-8" async="" src="js/ico-progress-viewer-public.js"></script>
 </body>
 </html>

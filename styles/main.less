@@ -1005,7 +1005,7 @@ section > .row {
 }
 
 .ico-progress-viewer {
-  display: block;
+  display: none;
   margin-top: 30px;
   border: 1px solid #183547;
   padding: 9%;
@@ -1155,10 +1155,28 @@ section > .row {
   }
 }
 
+.el-section-j1 {
+  padding: 30px 0 50px !important;
+  background: linear-gradient( -8deg , #183547, #992059);
+  h3{
+    margin-bottom: 50px;
+    text-align: center;
+    color: @white;
+  }
+  p{
+    color: @white;
+  }
+}
+
 #findoutmore {
   .el-section-13 {
     margin: 0 !important;
     padding: 0 !important;
+    background-image: none;
+    background-color: #BCC8CE;
+    .row{
+      margin: 0;
+    }
   }
 }
 
@@ -1216,7 +1234,7 @@ section > .row {
   }
   .footer-subsribe {
     height: 60px;
-    padding-top: 20px;
+    padding-top: 15px;
     input[name='EMAIL'] {
       width: 68%;
       border-top-left-radius: 30px;

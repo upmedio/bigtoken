@@ -6116,7 +6116,7 @@ p {
 }
 section > .row.process-diagram-row {
   width: 80%;
-  margin-top: 4%;
+  margin-top: 0;
 }
 .process-diagram li {
   width: 20%;
@@ -6135,8 +6135,8 @@ section > .row.process-diagram-row {
   height: 64px;
   margin: 0 auto 10px;
   padding: 20px;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #FFF;
+  color: #FFF;
   text-align: center;
   font-size: 26px;
 }
@@ -6147,7 +6147,7 @@ section > .row.process-diagram-row {
   height: 58px;
   margin: 2px 0 0 2px;
   border-radius: 50%;
-  border: 2px solid #000;
+  border: 2px solid #FFF;
   top: 0;
   left: 0;
 }
@@ -7802,7 +7802,7 @@ section > .row.full-width {
   }
 }
 .ico-progress-viewer {
-  display: block;
+  display: none;
   margin-top: 30px;
   border: 1px solid #183547;
   padding: 9%;
@@ -7966,9 +7966,26 @@ section > .row.full-width {
   line-height: 17px;
   text-transform: uppercase;
 }
+.el-section-j1 {
+  padding: 30px 0 50px !important;
+  background: linear-gradient(-8deg, #183547, #992059);
+}
+.el-section-j1 h3 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+.el-section-j1 p {
+  color: #ffffff;
+}
 #findoutmore .el-section-13 {
   margin: 0 !important;
   padding: 0 !important;
+  background-image: none;
+  background-color: #BCC8CE;
+}
+#findoutmore .el-section-13 .row {
+  margin: 0;
 }
 .label_footer {
   background: #183547;
@@ -8023,7 +8040,7 @@ section > .row.full-width {
 }
 .top-footer .footer-subsribe {
   height: 60px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 .top-footer .footer-subsribe input[name='EMAIL'] {
   width: 68%;

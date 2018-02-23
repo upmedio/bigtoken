@@ -1016,7 +1016,7 @@ section > .row {
   .progress-bar-outer {
     color: @gold;
     font-family: @font-family-hk-grotesk;
-    font-size: 26.62px;
+    font-size: 22px;
     line-height: 32px;
     text-align: left;
   }
@@ -1032,11 +1032,18 @@ section > .row {
     text-align: center;
     display: flex;
     justify-content: space-between;
-    :nth-child(2n) {
-      font-size: 32px;
-      line-height: 57px;
-      color: #992058;
+    div{
+      .number{
+        width: 100%;
+      }
+      .unit{
+        width: 100%;
+        font-size: @font-smaller;
+        font-weight: normal;
+        line-height: 120%;
+      }
     }
+
   }
   .progress {
     width: 100%;

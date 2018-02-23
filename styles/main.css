@@ -7819,7 +7819,7 @@ section > .row.full-width {
 .ico-progress-viewer .progress-bar-outer {
   color: #948171;
   font-family: "HKGrotesk", Helvetica, sans-serif;
-  font-size: 26.62px;
+  font-size: 22px;
   line-height: 32px;
   text-align: left;
 }
@@ -7838,10 +7838,14 @@ section > .row.full-width {
     font-size: 30px;
   }
 }
-.ico-progress-viewer .countdown :nth-child(2n) {
-  font-size: 32px;
-  line-height: 57px;
-  color: #992058;
+.ico-progress-viewer .countdown div .number {
+  width: 100%;
+}
+.ico-progress-viewer .countdown div .unit {
+  width: 100%;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 120%;
 }
 .ico-progress-viewer .progress {
   width: 100%;

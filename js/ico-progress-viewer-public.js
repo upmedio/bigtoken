@@ -279,7 +279,7 @@
             let m = padNumber(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
             let s = padNumber(Math.floor((distance % (1000 * 60)) / 1000));
 
-            let countdownString = `<div>${d}</div><div>:</div><div>${h}</div><div>:</div><div>${m}</div><div>:</div><div>${s}</div>`;
+            let countdownString = `<div><div class="number">${d}</div><div class="unit">Days</div></div><div>:</div><div> <div class="number">${h}</div><div class="unit">Hours</div></div><div>:</div><div><div class="number">${m}</div><div class="unit">Minutes</div></div><div>:</div><div><div class="number">${s}</div><div class="unit">Seconds</div></div>`;
             if (mode === "pre-sale") {
                 wrapper.querySelector(".mode-pre-sale .countdown").innerHTML = countdownString;
                 wrapper.querySelector(".mode-pre-sale .start-date").innerHTML = moment(abs_date).format(dateFormat);
@@ -317,7 +317,8 @@
 
                 let percent = Math.min(100, _quickMap.totalSupply.value / progressBarMax * 100);
                 //wrapper.querySelector(".progress-bar-outer").dataset.progressValue = `${_quickMap['weiRaised'].display} ETH`;
-                wrapper.querySelector(".progress-out-value").innerHTML = `${_quickMap['weiRaised'].display}`;
+                //wrapper.querySelector(".progress-out-value").innerHTML = `${_quickMap['weiRaised'].display}`;
+                wrapper.querySelector(".progress-out-value").innerHTML = `${_quickMap['weiRaised'].display * 5000}`;
                 wrapper.querySelector(".progress-value").style.width = `${percent}%`;
             }, 200);
         }

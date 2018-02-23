@@ -7437,6 +7437,9 @@ section > .row.full-width {
 .el-section-1 .btn:hover {
   box-shadow: 0 0 1px 1px #992059;
 }
+#joinico .el-section-1 {
+  padding: 4vh 0 8vh;
+}
 .el-section-2 {
   padding: 30px 0 50px !important;
   background-color: #183547;
@@ -7980,6 +7983,7 @@ section > .row.full-width {
   text-transform: uppercase;
 }
 .el-section-j1 {
+  margin-top: 87px;
   padding: 15px 0 35px !important;
   background-color: #183547;
 }
@@ -7991,13 +7995,13 @@ section > .row.full-width {
 .el-section-j1 p {
   color: #ffffff;
 }
-#findoutmore .el-section-13 {
+#joinico .el-section-13 {
   margin: 0 !important;
   padding: 0 !important;
   background-image: none;
   background-color: #BCC8CE;
 }
-#findoutmore .el-section-13 .row {
+#joinico .el-section-13 .row {
   margin: 0;
 }
 .label_footer {
@@ -8598,14 +8602,14 @@ section > .row.full-width {
   }
 }
 #getting-started span {
-  color: #ffffff;
+  color: #992059;
   font-size: 28px;
 }
 #getting-started .number-wrapper {
   text-align: center;
 }
 #getting-started .number-wrapper .number {
-  color: #ffffff;
+  color: #183547;
   font-size: 32px;
   padding-bottom: 10px;
 }

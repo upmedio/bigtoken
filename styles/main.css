@@ -7361,7 +7361,7 @@ section > .row.full-width {
 }
 @media (min-width: 991px) {
   .el-section-1 .main-title {
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 .el-section-1 form {
@@ -7409,6 +7409,9 @@ section > .row.full-width {
 .el-section-1 .form-message p {
   color: #183547;
   margin-bottom: 0;
+}
+.el-section-1 .white-transparent-box {
+  margin-top: 50px;
 }
 .el-section-1 .btn {
   width: 100%;

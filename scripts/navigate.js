@@ -8,6 +8,16 @@ function navigateFindoutmore() {
   }
 }
 
+function navigateJoinICO() {
+  var url = new URL(window.location.href);
+  var ref = url.searchParams.get("ref");
+  if (ref){
+    window.open("join-ico.html?ref="+ ref, "_self");
+  } else {
+    window.open("join-ico.html", "_self");
+  }
+}
+
 function navigateHome() {
   var url = new URL(window.location.href);
   var ref = url.searchParams.get("ref");

@@ -318,7 +318,7 @@
                 let percent = Math.min(100, _quickMap.totalSupply.value / progressBarMax * 100);
                 //wrapper.querySelector(".progress-bar-outer").dataset.progressValue = `${_quickMap['weiRaised'].display} ETH`;
                 //wrapper.querySelector(".progress-out-value").innerHTML = `${_quickMap['weiRaised'].display}`;
-                wrapper.querySelector(".progress-out-value").innerHTML = `${_quickMap['weiRaised'].display * 5000}`;
+                wrapper.querySelector(".progress-out-value").innerHTML = `${(_quickMap['weiRaised'].display * 5000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
                 wrapper.querySelector(".progress-value").style.width = `${percent}%`;
             }, 200);
         }

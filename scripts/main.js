@@ -143,16 +143,17 @@ jQuery(document).ready(function ($) {
     		data: $(this).serialize(),
     		dataType: 'json',
     		beforeSend: function() {
+                $contactForm.find('.alert').remove();
     			$contactForm.append('<div class="alert alert-loading">Sending message…</div>');
     		},
     		success: function(data) {
-    			$contactForm.find('.alert-loading').hide();
+    			$contactForm.find('.alert-loading').remove();
     			$contactForm.append('<div class="alert alert-success">Message sent!</div>');
 
           clear_form_elements($contactForm);
     		},
     		error: function(err) {
-    			$contactForm.find('.alert-loading').hide();
+    			$contactForm.find('.alert-loading').remove();
     			$contactForm.append('<div class="alert alert-danger">Ops, there was an error.</div>');
     		}
     	});

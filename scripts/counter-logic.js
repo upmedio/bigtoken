@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
 
   var now = new Date();
-  var launch = new Date("Februrary 27, 2018 6:00:00");
+  var launch = new Date("Februrary 23, 2018 6:00:00");
 
   console.log('Server time:' + now);
 

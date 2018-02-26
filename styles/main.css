@@ -8634,3 +8634,13 @@ section > .row.full-width {
 .blue-bordered {
   border: 2px solid #183547;
 }
+.ico-h4 {
+  font-family: "HKGrotesk", Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+.without_border {
+  border: none;
+}

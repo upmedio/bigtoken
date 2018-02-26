@@ -8644,3 +8644,6 @@ section > .row.full-width {
 .without_border {
   border: none;
 }
+#joinico .main-content {
+  padding-top: 67px;
+}

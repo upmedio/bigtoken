@@ -221,7 +221,7 @@
             updateMode(mode);
 
             let distance;
-            switch ('on-sale')
+            switch (mode)
             {
                 case 'pre-sale':
                     distance = new Date(startDate).getTime() - now;
@@ -260,8 +260,7 @@
                 }
             }
 
-            //return mode;
-            return "on-sale";
+            return mode;
         }
 
         function updateMode(mode) {

@@ -74,7 +74,6 @@
                       {
                           console.log('warning : ',data.message);
                       }else{
-
                           console.log('success');
                           console.log(JSON.stringify(data));
                           $('.alert').show();

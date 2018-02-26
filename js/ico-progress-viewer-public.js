@@ -78,7 +78,7 @@
             },
             {
 
-                gatewayUrl:'https://ropsten.infura.io/d9aEs3oVPeWpQbjGO2wP',
+                gatewayUrl:'https://mainnet.infura.io/d9aEs3oVPeWpQbjGO2wP',
                 contract:null,
                 w3:null,
                 smartContractAddress:'0xbAd9B65CFB0c2E89bc9543B86849780Baa52C605',

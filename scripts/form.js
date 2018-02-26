@@ -28,9 +28,7 @@
                         success     : function(data) {
                             if (data.result != "success") {
                                 $('#mce-error-response').html(data.msg).show();
-                                console.log(data);
                             } else {
-                                console.log(data);
                                 $('#mce-success-response').html('Thank You For Subscribing!').show();
                             }
                         }
@@ -39,6 +37,7 @@
                 else{
                     $('#mce-error-response').html('Your email are invalid.').show();
                 }
+
             });
         }
         $('#join').on('click', function(){

@@ -7998,7 +7998,7 @@ section > .row.full-width {
   text-transform: uppercase;
 }
 .el-section-j1 {
-  padding: 0!important;
+  padding: 0 !important;
   background-color: #183547;
 }
 .el-section-j1 h3 {
@@ -8646,4 +8646,17 @@ section > .row.full-width {
 }
 #joinico .main-content {
   padding-top: 67px;
+}
+.trans_header {
+  background-color: #992059;
+  color: white;
+  margin-top: -25px;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 10px;
+}
+.sm_contract {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 0;
 }

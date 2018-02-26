@@ -241,3 +241,4 @@ function init() {
             vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
         } } }
 window.onload = init;
+

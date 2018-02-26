@@ -6,6 +6,39 @@
         function submitForm(type){
            console.log('type:',type)
         }
+        var $form = $('#mc-embedded-subscribe-form');
+
+        if ( $form.length > 0 ) {
+            $form.submit(function () {
+                $('#mce-success-response').hide();
+                $('#mce-error-response').hide();
+                if ( event ) event.preventDefault();
+                var email2 = $('#mce-EMAIL').val();
+                console.log($form.serialize());
+                // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
+                if ( validateEmail(email2) ) {
+                    $.ajax({
+                        type: 'post',
+                        url: $form.attr('action'),
+                        data: $form.serialize(),
+                        cache       : false,
+                        dataType    : 'json',
+                        contentType: "application/json; charset=utf-8",
+                        error       : function(err) {  },
+                        success     : function(data) {
+                            if (data.result != "success") {
+                                $('#mce-error-response').html('not-ok').show();
+                                console.log(data);
+                            } else {
+                                // It worked, carry on...
+                                console.log(data);
+                                $('#mce-success-response').html('ok').show();
+                            }
+                        }
+                    });
+                }
+            });
+        }
         $('#join').on('click', function(){
             $('.warningalert').hide();
             // redirect to kyc.
@@ -113,7 +146,6 @@
                 }
             }
         });
-
         function validate(){
            var name = $('#Name').val();
            var email = $('#Email').val();
@@ -134,3 +166,4 @@
 
     });
 })(jQuery);
+

@@ -8631,3 +8631,6 @@ section > .row.full-width {
   color: #183547;
   font-size: 14px;
 }
+.blue-bordered {
+  border: 2px solid #183547;
+}

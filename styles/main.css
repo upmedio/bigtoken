@@ -6898,7 +6898,7 @@ section > .row.full-width {
 .row.media-row:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .row.media-row {
     margin: 0;
   }
@@ -7210,7 +7210,6 @@ section > .row.full-width {
 .main-header .main_menu {
   width: 95%;
   float: right;
-  padding-top: 20px;
 }
 .main-header .main_menu .social {
   float: left;
@@ -7240,7 +7239,7 @@ section > .row.full-width {
   background-color: #992059;
   color: white;
   border-radius: 25px;
-  padding: 12px 30px;
+  padding: 12px 0;
   font-size: 14px;
   text-align: center;
   white-space: nowrap;
@@ -7252,7 +7251,7 @@ section > .row.full-width {
 }
 .main-header .main_menu .menu {
   width: 65%;
-  padding: 0;
+  padding: 10px 0 0 0;
   float: left;
 }
 @media (max-width: 1200px) {
@@ -7556,6 +7555,7 @@ section > .row.full-width {
 }
 .el-section-6 .nav-tabs#myTab > .nav-item.active a,
 .el-section-6 .nav-tabs#myTab > .nav-item:hover a {
+  height: 100%;
   color: #183547;
 }
 .el-section-6 .nav-tabs#myTab > .nav-item.active a:hover,
@@ -7662,6 +7662,7 @@ section > .row.full-width {
   font-size: 30px;
   line-height: 36px;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 .el-section-6 .tab-content img {
   width: 100%;
@@ -7993,7 +7994,6 @@ section > .row.full-width {
   text-transform: uppercase;
 }
 .el-section-j1 {
-  margin-top: 87px;
   padding: 0!important;
   background-color: #183547;
 }
@@ -8239,7 +8239,7 @@ section > .row.full-width {
   z-index: 1;
   text-align: center;
   margin: 0 1.618em;
-  top: 55%;
+  top: 60%;
   opacity: 0;
 }
 #timeline .tl-content p {
@@ -8250,7 +8250,7 @@ section > .row.full-width {
   font-family: "HKGrotesk", Helvetica, sans-serif;
   text-transform: uppercase;
   color: #948171;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 #timeline .tl-year {

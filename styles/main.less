@@ -115,7 +115,7 @@ section > .row {
       margin-bottom: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       margin: 0;
       > * {
         margin-bottom: 20px;
@@ -432,7 +432,6 @@ section > .row {
     width: 95%;
 
     float: right;
-    padding-top: 20px;
 
     .social {
       float: left;
@@ -458,7 +457,7 @@ section > .row {
         background-color: @maroon;
         color: white;
         border-radius: 25px;
-        padding: 12px 30px;
+        padding: 12px 0;
         font-size: 14px;
         text-align: center;
         white-space: nowrap;
@@ -472,7 +471,7 @@ section > .row {
 
     .menu {
       width: 65%;
-      padding: 0;
+      padding: 10px 0 0 0;
       float: left;
       @media (max-width: 1200px) {
         width: 85%;
@@ -778,6 +777,7 @@ section > .row {
       &.active, &:hover {
         a {
 
+          height: 100%;
           &:hover, &:focus {
             border: none;
           }
@@ -870,6 +870,7 @@ section > .row {
       font-size: 30px;
       line-height: 36px;
       margin-bottom: 40px;
+      text-transform: uppercase;
     }
     img{
       width: 100%;
@@ -1185,7 +1186,6 @@ section > .row {
 }
 
 .el-section-j1 {
-  margin-top: 87px;
   padding: 0!important;
   background-color: #183547;
   h3{
@@ -1478,7 +1478,7 @@ section > .row {
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 55%;
+    top: 60%;
     opacity: 0;
     p {
       color: #ffffff61;
@@ -1488,8 +1488,7 @@ section > .row {
       font-family: @font-family-hk-grotesk;
       text-transform: uppercase;
       color: @gold;
-
-      font-size: @font-semi-normal;
+      font-size: 14px;
       font-weight: 600;
     }
   }

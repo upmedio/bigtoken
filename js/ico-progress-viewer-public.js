@@ -78,7 +78,7 @@
             },
             {
 
-                gatewayUrl:'https://mainnet.infura.io/hB9V2V53GXo9VidrvZTh',
+                gatewayUrl:'https://mainnet.infura.io/XGQLtSHR5Khx8OeuR48F',
                 contract:null,
                 w3:null,
                 smartContractAddress:'0xbAd9B65CFB0c2E89bc9543B86849780Baa52C605',

@@ -7267,8 +7267,12 @@ section > .row.full-width {
   position: relative;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  padding: 2px 6px;
   transition: all 0.3s linear;
+}
+@media (min-width: 875px) {
+  .main-header .main_menu .menu li {
+    padding: 2px 6px;
+  }
 }
 .main-header .main_menu .menu li:hover {
   background-color: #183547ab;

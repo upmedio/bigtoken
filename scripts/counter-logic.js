@@ -1,16 +1,16 @@
 jQuery(document).ready(function ($) {
 
   var now = new Date();
-  var launch = new Date("Februrary 23, 2018 6:00:00");
+  var launch = new Date("Februrary 27, 2018 6:00:00");
 
-  console.log('Server time:' + now);
+  //console.log('Server time:' + now);
 
   if( now < launch ){
-    console.log( "Not started yet" );
+    //console.log( "Not started yet" );
     $('.before-launch').css('display','block');
     $('.after-launch').css('display','none');
   }else{
-    console.log( "Launched" );
+    //console.log( "Launched" );
     $('.before-launch').css('display','none');
     $('.after-launch').css('display','block');
   }

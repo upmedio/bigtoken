@@ -23,7 +23,7 @@
         token.div=new BigNumber('1e'+token.decimals);
 
         let quickMap={};
-        let network='ropsten';
+        let network='mainnet';
 
         let methodsListValues=[
             {

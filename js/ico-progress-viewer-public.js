@@ -221,7 +221,7 @@
             updateMode(mode);
 
             let distance;
-            switch ('on-sale')
+            switch ('on-sale;)
             {
                 case 'pre-sale':
                     distance = new Date(startDate).getTime() - now;

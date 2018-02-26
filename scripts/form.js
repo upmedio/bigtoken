@@ -73,10 +73,29 @@
                       {
                           console.log('warning : ',data.message);
                       }else{
-                          console.log('success');
-                          console.log(JSON.stringify(data));
-                          $('.alert').show();
-                          $('.warningalert').hide();
+
+
+                          if(($('#Name').val() == '') && ($('#Email').val() == '' )){
+                              $('.warningalert').html('Your name and email is required.');
+                              $('.warningalert').show();
+                          }
+                          else {
+                              if ($('#Name').val() == ''){
+                                  $('.warningalert').html('Your name is required.');
+                                  $('.warningalert').show();
+                              }
+                              else {
+                                  if($('#Email').val() == ''){
+                                      $('.warningalert').html('Your email address is required.');
+                                      $('.warningalert').show();
+                                  }
+                                  else{
+
+                                      $('.warningalert').html('Your email are invalid. Please try again.');
+                                      $('.warningalert').show();
+                                  }
+                              }
+                          }
                       }
 
                   },

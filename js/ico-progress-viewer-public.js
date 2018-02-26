@@ -221,7 +221,7 @@
             updateMode(mode);
 
             let distance;
-            switch ('on-sale;)
+            switch (mode)
             {
                 case 'pre-sale':
                     distance = new Date(startDate).getTime() - now;
@@ -261,7 +261,7 @@
             }
 
             //return mode;
-            return "on-sale";
+            return mode;
         }
 
         function updateMode(mode) {
@@ -315,7 +315,6 @@
             //progress bar (with a small delay)
             setTimeout(function() {
                 let progressBarMax = _quickMap.maxTokenSupply.value;
-
                 let percent = Math.min(100, _quickMap.totalSupply.value / progressBarMax * 100);
                 //wrapper.querySelector(".progress-bar-outer").dataset.progressValue = `${_quickMap['weiRaised'].display} ETH`;
                 //wrapper.querySelector(".progress-out-value").innerHTML = `${_quickMap['weiRaised'].display}`;

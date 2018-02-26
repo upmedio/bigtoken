@@ -27,15 +27,17 @@
                         error       : function(err) {  },
                         success     : function(data) {
                             if (data.result != "success") {
-                                $('#mce-error-response').html('not-ok').show();
+                                $('#mce-error-response').html('Try again later.').show();
                                 console.log(data);
                             } else {
-                                // It worked, carry on...
                                 console.log(data);
-                                $('#mce-success-response').html('ok').show();
+                                $('#mce-success-response').html('Thank You For Subscribing!').show();
                             }
                         }
                     });
+                }
+                else{
+                    $('#mce-error-response').html('Your email are invalid.').show();
                 }
             });
         }

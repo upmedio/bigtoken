@@ -27,7 +27,7 @@
                         error       : function(err) {  },
                         success     : function(data) {
                             if (data.result != "success") {
-                                $('#mce-error-response').html('Try again later.').show();
+                                $('#mce-error-response').html(data.msg).show();
                                 console.log(data);
                             } else {
                                 console.log(data);
